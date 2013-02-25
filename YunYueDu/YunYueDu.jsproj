@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>c57b9dc1-2f64-4789-8892-e2cf3ee53910</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">
+    <VisualStudioVersion>11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).Default.props" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).props" />
+  <PropertyGroup>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetPlatformVersion>8.0</TargetPlatformVersion>
+    <DefaultLanguage>zh-CN</DefaultLanguage>
+    <PackageCertificateKeyFile>YunYueDu_TemporaryKey.pfx</PackageCertificateKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppxManifest Include="package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <Content Include="css\default.css" />
+    <Content Include="images\icon\arrow.png" />
+    <Content Include="images\icon\baokan.png" />
+    <Content Include="images\icon\bendizixun.png" />
+    <Content Include="images\icon\caijin.png" />
+    <Content Include="images\icon\faxian.png" />
+    <Content Include="images\icon\gaoxiao.png" />
+    <Content Include="images\icon\gongkaike.png" />
+    <Content Include="images\icon\keji.png" />
+    <Content Include="images\icon\lingyi.png" />
+    <Content Include="images\icon\qiche.png" />
+    <Content Include="images\icon\remen.png" />
+    <Content Include="images\icon\renwen.png" />
+    <Content Include="images\icon\shejiaokongjian.png" />
+    <Content Include="images\icon\shenghuo.png" />
+    <Content Include="images\icon\shijue.png" />
+    <Content Include="images\icon\shishang.png" />
+    <Content Include="images\icon\tiyu.png" />
+    <Content Include="images\icon\waiwen.png" />
+    <Content Include="images\icon\wangyizhaoping.png" />
+    <Content Include="images\icon\wenshi.png" />
+    <Content Include="images\icon\xingzhuo.png" />
+    <Content Include="images\icon\xinwen.png" />
+    <Content Include="images\icon\youxi.png" />
+    <Content Include="images\icon\yule.png" />
+    <Content Include="images\icon\zizhu.png" />
+    <Content Include="images\image-01-535x535.png" />
+    <Content Include="images\24-24.png" />
+    <Content Include="images\310150.png" />
+    <Content Include="images\smalllogo12.png" />
+    <Content Include="images\storelogo.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\metro-icon.png" />
+    <Content Include="images\smalllogo.png" />
+    <Content Include="images\splashscreen.png" />
+    <Content Include="images\150150.png" />
+    <Content Include="js\add.js" />
+    <Content Include="js\cordova-2.3.0.js" />
+    <Content Include="js\data.js" />
+    <Content Include="js\default.js" />
+    <Content Include="js\navigator.js" />
+    <Content Include="js\util.js" />
+    <Content Include="pages\addSub\addSub.css" />
+    <Content Include="pages\addSub\addSub.html" />
+    <Content Include="pages\addSub\addSub.js" />
+    <Content Include="pages\addSub\worker.js" />
+    <Content Include="pages\content\content.css" />
+    <Content Include="pages\content\content.html" />
+    <Content Include="pages\content\content.js" />
+    <Content Include="pages\content\contextControl.css" />
+    <Content Include="pages\content\flipView.html" />
+    <Content Include="pages\content\flipView.js" />
+    <Content Include="pages\content\font.css" />
+    <Content Include="pages\content\itemDetail.css" />
+    <Content Include="pages\content\itemDetail.html" />
+    <Content Include="pages\content\itemDetail.js" />
+    <Content Include="pages\content\flipView.css" />
+    <Content Include="pages\content\pris.css" />
+    <Content Include="pages\content\pris.js" />
+    <Content Include="pages\content\stylesheet.css" />
+    <Content Include="pages\cover\cover.css" />
+    <Content Include="pages\cover\cover.html" />
+    <Content Include="pages\cover\cover.js" />
+    <Content Include="pages\items\items.css" />
+    <Content Include="pages\items\items.html" />
+    <Content Include="pages\items\items.js" />
+    <Content Include="pages\split\album.css" />
+    <Content Include="pages\split\album.html" />
+    <Content Include="pages\split\album.js" />
+    <Content Include="pages\split\news.js" />
+    <Content Include="pages\split\news.css" />
+    <Content Include="pages\split\news.html" />
+    <Content Include="default.html" />
+    <None Include="YunYueDu_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="Microsoft.WinJS.1.0, Version=1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="NotificationsExtensions">
+      <HintPath>NotificationsExtensions.winmd</HintPath>
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
+  <!-- To modify your build process, add your task inside one of the targets below then uncomment
+       that target and the DisableFastUpToDateCheck PropertyGroup. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <PropertyGroup>
+    <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
+  </PropertyGroup>
+  -->
+</Project>

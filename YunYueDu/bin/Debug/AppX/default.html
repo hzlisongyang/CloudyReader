@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<!--<head>-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <title>云阅读</title>
+
+    <!-- WinJS 引用 -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- YunYueDu 引用 -->
+
+    <script src="js/util.js"></script>
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/add.js"></script>
+    <script src="/js/default.js"></script>
+    <script src="/js/navigator.js"></script>
+    <script src="/js/data.js"></script>
+    <script src="/js/cordova-2.3.0.js"></script>
+</head>
+<body >
+   
+
+    <div id="extendedSplashScreen" class="extendedSplashScreen hidden">
+        <img   id="extendedSplashImage" src="/images/splashscreen.png" alt="Splash screen image" />
+        <div id="extendedSplashProgress">
+             <progress class="win-ring .ringSize" ></progress>
+
+        </div>
+    </div>
+
+    <div  id="contenthost"  data-win-control="Application.PageControlNavigator"></div>
+
+</body>
+</html>

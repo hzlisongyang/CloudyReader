@@ -1,0 +1,144 @@
+﻿body {
+}
+
+
+
+
+.fragment-add .win-listview .win-container:hover {
+    outline:none;
+}
+
+.fragment-add.win-listview.win-selectionstylefilled .win-container:hover {
+    /**background-color: rgba(0, 0, 0, 0.08);*/
+    background-color: rgb(255, 0, 0);
+}
+
+.fragment-add.win-listview .win-container{
+    background-color:rgb(50,55,61);
+}
+		    .fragment-add {
+			    /* 定义包含横幅和正文的行的网格*/
+			    -ms-grid-columns:220px 300px 1fr; -ms-grid-rows:1fr; display: -ms-grid; height: 100%; width: 100%;
+		    }
+		    .fragment-add header[role=banner] {
+			    /* 定义包含后退按钮和页标题的列的网格。*/
+			    -ms-grid-columns: 18% 1fr;
+			    -ms-grid-rows: 1fr;
+			    display: -ms-grid;
+			
+		    }
+
+            .fragment-add header[role=banner] .win-backbutton {
+			    -ms-grid-column:1;
+				margin-left: 20px;
+				margin-top: 30px;
+				width: 35px;
+				height: 35px;
+				font-size: 12pt;
+				line-height: 32px; /* line-height must match the content box height. */
+				vertical-align: baseline;
+		    }
+			
+            .fragment-add header[role=banner] .titlearea {
+				margin: 22px 0 0 10px;
+                -ms-grid-column: 2;font-size:26px;
+            }
+
+            .fragment-add header[role=banner] .titlearea .pagetitle {
+                            width: calc(100% - 20px);   
+				            margin-left:10px;
+				            line-height:50px;
+                }
+				
+            .fragment-add section[role=main] {
+                -ms-grid-row: 2;
+                height: 100%;
+                width: 100%;
+            }
+
+                .fragment-add .sublist {
+                    -ms-grid-row:1;-ms-grid-columns:1fr;-ms-grid-rows:50px 120px 1fr;display: -ms-grid;height: 100%;width: 100%;/*background-color:#32373d;**/background-color:rgb(50,55,61);color:white;
+                }
+                .fragment-add header[role=banner] {
+                    -ms-grid-row:2;
+                }
+
+
+/* 类目列表 */
+               .fragment-add .itemslist .win-viewport .win-surface {
+                    background-color:rgb(50,55,61);
+                }
+
+               .fragment-add .itemslist .win-viewport .win-surface {
+                    background-color:rgb(50,55,61);
+                }               
+              .fragment-add .itemslist .win-container {
+                     margin: 18px 5px 18px 10px;
+                 }
+
+              .fragment-add .itemslist .item {
+                     height: 40px; line-height: 40px; background-color: rgb(50,55,61);
+                 }
+                   .fragment-add .itemslist .item .item-content{
+                         -ms-grid-columns: 55px 1fr; display: -ms-grid;
+                     }   
+                   .fragment-add .itemslist .item .item-content img{
+                         width:30px;height:30px;margin:5px 0 0 15px;-ms-grid-column:1;
+                     }  
+                   .fragment-add .itemslist .item .item-content .list-name{
+                         -ms-grid-column: 2; font-size: 17px;
+                     }    
+                   .fragment-add .itemslist .item:hover .item-content{
+                         background-color:rgb(40,45,51);/***/
+                     } 
+
+/** Rating 定制*/
+
+        .differentRatingColor .win-star.win-user.win-full 
+        {
+            color: rgb(0, 0, 0);
+        }
+
+
+        .differentRatingColor .win-star.win-tentative.win-full
+        {
+            color: rgb(0, 0, 0);
+        }
+
+        .differentRatingColor .win-star.win-averageRating.win-full
+        {
+            color: rgb(0, 0, 0);
+        }
+        .differentRatingColor .win-star.win-user.win-full,
+        .differentRatingColor .win-star.win-user.win-full.win-disabled {
+            color: rgba(247, 207, 72, 1.0);
+        }
+
+       .differentRatingColor  .win-star.win-user.win-empty {
+            color: rgba(128, 128, 128, 0.77);
+        }
+
+/* Back button. */
+       .fragment-add .win-backbutton {
+            color:#c6c3c6;
+            border-color:#c6c3c6;
+        }
+
+       .fragment-add .win-backbutton:hover {
+            border-width: 2px;
+            border-style: solid;
+            border-radius: 50%;
+            border-color:white;
+            color:white;
+            
+        }
+
+       .fragment-add .win-backbutton:hover:active {
+            border-width: 2px;
+            border-style: solid;
+            border-radius: 50%;
+            border-color:white;
+            color:white;
+            background-color:transparent;
+            
+        }

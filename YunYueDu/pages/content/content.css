@@ -1,0 +1,204 @@
+﻿.fragment {
+    /* 定义包含横幅和正文的行的网格*/
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: 128px 1fr;
+    display: -ms-grid;
+    height: 100%;
+    width: 100%;
+}
+
+        .splitpage  header {
+            -ms-grid-columns: 180px 20px 1fr;
+            -ms-grid-rows: 180px;
+            display: -ms-grid;
+            margin-bottom: 5px;
+            margin-top: 60px;
+            color:black;
+        }
+
+
+.splitpage .fragment .content {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    display: block;
+    height: 100%;
+    overflow-x: auto;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+    color:black;
+}
+
+    .splitpage .content .m-mb {
+        /* 定义多列，以便在默认情况下水平滚动文章内容。*/
+        
+        column-gap: 80px;
+        column-rule-color:rgba(211, 203, 203, 0.65);
+        column-rule-style:dotted;
+        column-width: 480px;
+        height: calc(100% - 183px);
+        margin-left: 500px;
+        margin-top: 133px;
+        width: 480px;
+        color:black;
+        
+    }
+    /*
+        .itemdetailpage .content article header .item-title {
+            margin-bottom: 19px;
+        }
+
+        .itemdetailpage .content article header .item-subtitle {
+            margin-bottom: 16px;
+            margin-top: 0;
+        }
+
+        .itemdetailpage .content article .item-image {
+            height: 240px;
+            width: 460px;
+        }
+*/
+        .splitpage .content .m-mb p {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            margin-right: 20px;
+            display:block;
+            background-color:red;
+        }
+
+@media screen and (-ms-view-state: filled) {
+    .splitpage {
+        -ms-grid-columns: 420px 1fr;
+    }
+
+        .splitpage .itemlistsection .itemlist .item {
+            -ms-grid-columns: 60px 1fr;
+            height: 60px;
+            margin-bottom: 0;
+            width: 282px;
+        }
+
+            .splitpage .itemlistsection .itemlist .item .item-image {
+                height: 60px;
+                width: 60px;
+            }
+
+            .splitpage .itemlistsection .itemlist .item .item-info .item-title {
+                margin-top: 4px;
+                max-height: 40px;
+                overflow: hidden;
+            }
+
+            .splitpage .itemlistsection .itemlist .item .item-info .item-description {
+                display: none;
+            }
+
+        .splitpage .articlesection {
+            margin-left: 60px;
+            padding-right: 66px;
+        }
+}
+
+@media screen and (-ms-view-state: snapped) {
+    .splitpage {
+        -ms-grid-columns: 320px 0px;
+    }
+
+        .splitpage .itemlistsection {
+            margin-left: 6px;
+        }
+
+            .splitpage .itemlistsection .itemlist .item {
+                -ms-grid-columns: 60px 1fr;
+                height: 60px;
+                width: 282px;
+            }
+
+                .splitpage .itemlistsection .itemlist .item .item-image {
+                    height: 60px;
+                    width: 60px;
+                }
+
+                .splitpage .itemlistsection .itemlist .item .item-info .item-title {
+                    margin-top: 4px;
+                    max-height: 30pt;
+                    overflow: hidden;
+                }
+
+                .splitpage .itemlistsection .itemlist .item .item-info .item-description {
+                    visibility: hidden;
+                }
+
+        .splitpage .articlesection {
+            -ms-grid-row-span: 1;
+            -ms-grid-row: 2;
+            margin-left: 20px;
+            padding-right: 36px;
+        }
+
+            .splitpage .articlesection header {
+                display: block;
+                margin-top: 0;
+            }
+
+                .splitpage .articlesection header .text {
+                    -ms-grid-column: 1;
+                    margin-top: 6px;
+                }
+
+                    .splitpage .articlesection header .text .article-subtitle {
+                        margin-bottom: 16px;
+                        margin-top: 10px;
+                        overflow: hidden;
+                    }
+
+                .splitpage .articlesection header .article-image {
+                    height: 160px;
+                    width: 242px;
+                }
+
+        .splitpage .itemlistsection, .splitpage .articlesection {
+            -ms-grid-column: 2;
+            visibility: hidden;
+        }
+
+        .splitpage .primarycolumn {
+            -ms-grid-column: 1;
+            visibility: visible;
+        }
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+    .splitpage {
+        -ms-grid-columns: 1fr 0px;
+    }
+
+        .splitpage .itemlistsection {
+            margin-left: 86px;
+        }
+
+            .splitpage .itemlistsection .itemlist .win-vertical.win-viewport .win-container {
+                margin-right: calc(100% - 510px);
+            }
+
+        .splitpage .articlesection {
+            -ms-grid-row: 2;
+            -ms-grid-row-span: 1;
+            margin-left: 100px;
+            padding-right: 100px;
+        }
+
+            .splitpage .articlesection .header {
+                margin-top: 0;
+            }
+
+        .splitpage .itemlistsection, .splitpage .articlesection {
+            -ms-grid-column: 2;
+            visibility: hidden;
+        }
+
+        .splitpage .primarycolumn {
+            -ms-grid-column: 1;
+            visibility: visible;
+        }
+}

@@ -1,0 +1,148 @@
+﻿
+
+.newspage section[role=main] {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+}
+
+/* 此选择器用于阻止 ui-dark/light.css 覆盖对 .win-surface
+   的更改。*/
+.newspage .itemslist .win-horizontal.win-viewport .win-surface {
+    margin-bottom: 60px;
+    margin-left: 115px;
+    margin-right: 115px;
+    margin-top: 155px;
+}
+
+.newspage .itemslist {
+    height: 100%;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.newspage .itemslist .win-container{
+    margin: 10px 80px 10px 7px;
+}
+
+    .newspage .itemslist .item {
+        color:black;width:260px;height:250px;border-top:2px solid rgba(238, 37, 37, 0.93);
+    }
+
+        .newspage .itemslist .item  .item-info{
+ 
+        }
+                .newspage .itemslist .item .item-info .item-title {
+                      font-size:21px;max-width:260px; height:60px;overflow:hidden;
+                }
+                .newspage .itemslist .item .item-info .item-updated {
+                        font-size:14px;color:#ccc;
+                }
+
+        .newspage .itemslist .item  .item-content{
+             display:-ms-grid;-ms-grid-columns:150px,1fr;margin-top:5px;
+        }
+
+                .newspage .itemslist .item .item-content .item-subtitle {
+                    -ms-grid-column:1;font-size:15px;line-height:23px;height:120px;max-width:258px;overflow:hidden;
+                }
+
+               .newspage .itemslist .item .item-content .bg {
+                    -ms-grid-column:2;height:103px;width:117px;margin-top:20px;padding-left:12px;overflow:hidden;background-size:cover;
+                }
+     
+    /*只有图片的情况下*/
+       .newspage .itemslist .item .item-overlay {
+			margin-top:145px;height:100px;-ms-grid-row: 2;-ms-grid-rows: 65px 21px 1fr;display: -ms-grid;padding: 10px 15px 2px 15px;
+        }
+
+           .newspage .itemslist .item .item-overlay .item-title {
+               font-size:21px;max-width:248px; height:55px;overflow:hidden;
+
+            }
+
+            .newspage .itemslist  .item .item-overlay .item-updated {
+                -ms-grid-row:2;width: 220px;font-size:13px;color:rgba(204, 198, 198, 0.88);
+            }
+
+
+
+
+@media screen and (-ms-view-state: fullscreen-landscape), screen and (-ms-view-state: fullscreen-portrait), screen and (-ms-view-state: filled) {
+    .newspage .itemslist .item .item-overlay {
+        background: rgba(0,0,0,0.65);
+    }
+
+        .newspage .itemslist .item .item-overlay .item-title {
+            color: rgba(255,255,255,0.87);
+        }
+
+        .newspage .itemslist .item .item-overlay .item-subtitle {
+            color: rgba(255,255,255,0.6);
+        }
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape) and (-ms-high-contrast), screen and (-ms-view-state: fullscreen-portrait) and (-ms-high-contrast), screen and (-ms-view-state: filled) and (-ms-high-contrast) {
+    .newspage .itemslist .item .item-overlay {
+        color: WindowText;
+    }
+}
+
+@media screen and (-ms-view-state: snapped) {
+    .newspage section[role=main] {
+        -ms-grid-row: 2;
+        -ms-grid-row-span: 1;
+    }
+
+    .newspage .itemslist {
+        margin-top: 20px;
+    }
+
+        .newspage .itemslist .win-vertical.win-viewport .win-surface {
+            margin-bottom: 30px;
+        }
+
+        .newspage .itemslist .win-container {
+            margin-bottom: 15px;
+            margin-left: 13px;
+            margin-right: 35px;
+
+        }
+
+    .newspage .itemslist .item {
+        color:black;
+		background-color:white;
+        width:275px;height:150px;border-top:2px solid rgba(238, 37, 37, 0.93);
+    }
+
+        .newspage .itemslist .item  .item-info{
+ 
+        }
+            .newspage .itemslist .item .item-info .item-title {
+                  font-size:19px;max-width:300px; height:55px;overflow:hidden;
+            }
+            .newspage .itemslist .item .item-info .item-updated {
+                    font-size:14px;color:#ccc;
+            }
+
+        .newspage .itemslist .item  .item-content{
+             display:none;display:-ms-grid;-ms-grid-columns:150px,1fr;
+        }
+
+        .newspage .itemslist .item .item-content .item-subtitle {
+            -ms-grid-column:1;font-size:16px;line-height:25px;height:75px;max-width:300px;overflow:hidden;
+        }
+
+       .newspage .itemslist .item .item-content .bg {
+            -ms-grid-column:2;height:75px;width:70px;margin-top:8px;overflow:hidden;background-color:rgba(255,255,255,0.87);
+        }
+        .newspage .itemslist .item .item-content .item-image {
+           width:70px;min-height:75px;
+        }
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+    .newspage .itemslist .win-horizontal.win-viewport .win-surface {
+        margin-left: 100px;
+    }
+}

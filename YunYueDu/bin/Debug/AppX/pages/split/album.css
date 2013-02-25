@@ -1,0 +1,155 @@
+﻿.albumspage section[role=main] {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+}
+
+/* 此选择器用于阻止 ui-dark/light.css 覆盖对 .win-surface
+   的更改。*/
+
+.albumspage .splitslist .win-horizontal.win-viewport .win-surface {
+    margin-bottom: 60px;
+    margin-left: 115px;
+    margin-right: 115px;
+    margin-top: 155px;
+}
+
+
+.albumspage .splitslist {
+    height: 100%;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+
+}
+
+    .albumspage .splitslist .item-album-large  {
+        -ms-grid-columns: 1fr;
+        -ms-grid-rows: 1fr 90px;
+        display: -ms-grid;
+		background-color:white;
+        padding:0px;
+        display:-ms-grid;-ms-grid-rows: 1fr 40px;
+        -ms-overflow-style:none;
+        height:510px;
+        width:510px;
+    }
+        .albumspage .splitslist .item-album-large .item-image {
+            height:510px;
+        }
+
+    .albumspage .splitslist .item-album {
+        -ms-grid-columns: 1fr;
+        -ms-grid-rows: 1fr 90px;
+        display: -ms-grid;
+		background-color:white;
+        padding:0px;
+        display:-ms-grid;-ms-grid-rows: 1fr 40px;
+        -ms-overflow-style:none;
+        height:250px;
+        width:250px;
+    }
+
+        .albumspage .splitslist .item-album .item-image {
+            height:250px;
+        }
+
+  .albumspage  .splitslist .album-title {
+        font-size:17px;margin-top:8px;margin-left:5px;color:white;height:25px;line-height:30px;
+      }
+
+  .albumspage  .splitslist .item-info{
+           color:black;height:250px;display:inline-block; -ms-grid-row:2;
+    }
+
+
+@media screen and (-ms-view-state: fullscreen-landscape), screen and (-ms-view-state: fullscreen-portrait), screen and (-ms-view-state: filled) {
+    .albumspage .splitslist .item-album .item-info {
+        background: rgba(0,0,0,0.65);
+    }
+    .albumspage .splitslist .item-album-large .item-info {
+        background: rgba(0,0,0,0.65);
+    }
+    
+        .albumspage .splitslist .item-album .item-info .item-title {
+            color: rgba(255,255,255,0.87);
+        }
+
+        .albumspage .splitslist .item-album .item-info .item-subtitle {
+            color: rgba(255,255,255,0.6);
+        }
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape) and (-ms-high-contrast), screen and (-ms-view-state: fullscreen-portrait) and (-ms-high-contrast), screen and (-ms-view-state: filled) and (-ms-high-contrast) {
+    .albumspage .splitslist .item-album .item-overlay {
+        color: WindowText;
+    }
+}
+
+@media screen and (-ms-view-state: snapped) {
+    .albumspage section[role=main] {
+        -ms-grid-row: 2;
+        -ms-grid-row-span: 1;
+    }
+
+    .albumspage .splitslist {
+        margin-top: 20px;
+    }
+
+        .albumspage .splitslist .win-vertical.win-viewport .win-surface {
+            margin-bottom: 30px;
+        }
+
+        .albumspage .splitslist .win-container {
+            margin-bottom: 15px;
+            margin-left: 13px;
+            margin-right: 35px;
+
+        }
+
+        .albumspage .splitslist .item-album {
+            -ms-grid-rows: 1fr 40px;
+            display: -ms-grid;
+            height: 240px;
+            width: 272px;
+            color:black;
+        }
+        .albumspage .splitslist .item-album-large {
+            -ms-grid-rows: 1fr 40px;
+            display: -ms-grid;
+            height: 240px;
+            width: 272px;
+            color:black;
+        }
+
+        .albumspage .splitslist .item-album .item-info .item-title {
+                font-size:14px;margin-top:4px;max-width:250px;height:38px;overflow:hidden;
+                line-height:18px;
+        }
+
+
+  .albumspage  .splitslist .item-info{
+           color:black;
+           display:inline-block;
+           -ms-grid-row:2;
+    }
+
+        .albumspage .splitslist .item-album .item-image {
+            width:272px;
+        }
+        .albumspage .splitslist .item-album-large .item-image {
+            width:272px;
+        }
+
+     .albumspage .splitslist .item-album .item-info {
+        background: rgba(0,0,0,0.65);
+    }
+    .albumspage .splitslist .item-album-large .item-info {
+        background: rgba(0,0,0,0.65);
+    }
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+    .albumspage .splitslist .win-horizontal.win-viewport .win-surface {
+        margin-left: 100px;
+    }
+}

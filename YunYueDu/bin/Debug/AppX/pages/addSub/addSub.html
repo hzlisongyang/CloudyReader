@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <title>coverPage</title>
+
+    <!-- YunYueDu 引用 -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <link href="addSub.css" rel="stylesheet" />
+    <script src="addSub.js"></script>
+    <script src="../../js/util.js"></script>
+    <script src="../../js/data.js"></script>
+</head>
+<body>
+
+
+    <div class="fragment-add">
+        <div class="sublist">
+            <header aria-label="Header content" role="banner">
+                <button class="win-backbutton" aria-label="Back" disabled type="button"></button>
+                <h2 class="titlearea win-type-ellipsis" style="-ms-grid-column: 2">
+                    <span class="pagetitle">内容中心</span>
+                </h2>
+            </header>
+            <div class="itemlistsection" aria-label="List column" style="-ms-grid-row: 3; height: 100%;">
+                <div style="height: 100%;" class="itemslist " aria-label="List of this group's items" data-win-control="WinJS.UI.ListView" data-win-options="{selectionMode: 'none'}"></div>
+            </div>
+        </div>
+        <!--具体列表-->
+        <div style="-ms-grid-column: 2; margin-top: 100px;">
+            <div style="height: 100%; margin-left: 10px; background-color: rgb(249, 249, 249);" class="detaillist" aria-label="List of this group's items" data-win-control="WinJS.UI.ListView"
+                data-win-options="{
+                            selectionMode: 'none',
+                            pagesToLoad: 1,
+                            loadingBehavior: 'incremental',
+                            automaticallyLoadPages: true, 
+                            pagesToLoadThreshold: 0.001
+                }">
+            </div>
+        </div>
+        <!--订阅介绍-->
+        <div id="introduce" style="-ms-grid-column: 3; display: -ms-grid; -ms-grid-columns: 160px 1fr; -ms-grid-rows: 100px 100px 1fr; opacity: 0;">
+            <div style="-ms-grid-column: 1; -ms-grid-row: 2;">
+                <div id="sub_pic" style="border: 1px solid #ccc; height: 99px; width: 99px; margin-left: 50px; background-size: cover;"></div>
+            </div>
+            <div style="-ms-grid-column: 2; -ms-grid-row: 2; display: -ms-grid; -ms-grid-columns: 300px 1fr;">
+                <div style="color: black;">
+                    <h2 id="sub_title"></h2>
+                    <div id="sub_content" style="margin-top: 30px; height: 37px;"></div>
+                </div>
+                <div style="-ms-grid-column: 2;">
+                    <button id="sub_button" style="background-color: red;">添加订阅</button>
+                </div>
+            </div>
+            <div style="-ms-grid-column: 2; -ms-grid-row: 3">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="detailtemplate" data-win-control="WinJS.Binding.Template">
+        <div class="item" style="color: black; width: 280px;">
+            <div style="-ms-grid-columns: 80px 1fr; -ms-grid-rows: 55px 40px; display: -ms-grid; background-color: rgb(249, 249, 249);">
+                <img src="#" style="-ms-grid-column: 1; -ms-grid-row: 1; width: 55px; height: 55px;" data-win-bind=" src:coverImage" />
+                <div style="-ms-grid-column: 2; -ms-grid-rows: 25px 15px 10px; display: -ms-grid;">
+                    <h4 class="item-title win-type-ellipsis" style="font-family: 微软雅黑; font-size: 17px; -ms-grid-row: 1; width: 185px;" data-win-bind="textContent: title"></h4>
+                    <div class="win-small differentRatingColor" style="-ms-grid-row: 2; width: 80px;" data-win-bind="winControl.userRating:score" data-win-control="WinJS.UI.Rating"
+                        data-win-options="{averageRating : 3.5, disabled:true}">
+                    </div>
+                    <div style="-ms-grid-row: 3; font-size: 12px; color: #ccc;" data-win-bind="textContent:describe"></div>
+                </div>
+                <div style="-ms-grid-row: 2; -ms-grid-column: 1;">
+                </div>
+                <div style="-ms-grid-row: 2; -ms-grid-column: 2;"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--sub list-->
+    <div class="itemtemplate" data-win-control="WinJS.Binding.Template">
+        <div class="item" >
+                <div class="item-content" >
+                    <img src="#"  data-win-bind="src:icon">
+                    <div class="list-name"  data-win-bind="textContent: title"></div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>

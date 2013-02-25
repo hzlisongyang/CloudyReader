@@ -1,0 +1,148 @@
+﻿
+/*listView*/
+.win-listview .win-container:not(.win-footprint) {
+    background-color: rgb(255, 255, 255);
+}
+
+.win-ui-dark .win-listview .win-focusedoutline {
+    outline: rgb(255, 255, 255) solid 2px;
+}
+.win-listview .win-container:hover {
+    outline: rgba(0, 0, 0, 0.3) solid 3px;
+}
+.win-listview.win-selectionstylefilled .win-container:hover {
+    /**background-color: rgba(0, 0, 0, 0.08);*/
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+
+ /*Back button.*/
+    .win-backbutton {
+        color:#c6c3c6;
+        border-color:#c6c3c6;
+    }
+    .win-backbutton:hover, .win-backbutton:hover:active {
+        border-width: 2px;
+        border-style: solid;
+        border-radius: 50%;
+        border-color:black;
+        color:black;
+    }
+
+
+
+#contenthost {
+    height: 100%;
+    width: 100%;
+    background-color:white;
+}
+
+.fragment {
+    /* 定义包含横幅和正文的行的网格*/
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: 128px 1fr;
+    display: -ms-grid;
+    height: 100%;
+    width: 100%;
+}
+
+        progress.win-ring {
+            width: 80px;
+            height: 80px;
+        }
+        .extendedSplashScreen {
+            background-color:#fff;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            text-align: center;
+        }
+
+        .extendedSplashScreen.hidden {
+            
+        }
+
+        #extendedSplashImage {
+            position: absolute;
+            left: 371.32px;
+            top: 226.01px;
+        }
+
+        #extendedSplashProgress
+        {
+            position: absolute;
+            width: 100%;
+
+            text-align: center;
+            left: 5px;
+            top: 438.2px;
+        }
+
+
+    .fragment header[role=banner] {
+        /* 定义包含后退按钮和页标题的列的网格。*/
+        -ms-grid-columns: 120px 1fr;
+        -ms-grid-rows: 1fr;
+        display: -ms-grid;
+    }
+
+        .fragment header[role=banner] .win-backbutton {
+            margin-left: 39px;
+            margin-top: 59px;
+			
+        }
+
+        .fragment header[role=banner] .titlearea {
+            -ms-grid-column: 2;
+            margin-top: 37px;
+        }
+
+            .fragment header[role=banner] .titlearea .pagetitle {
+                width: calc(100% - 20px);
+				color:black;
+				font-size:45px;
+				margin-left:10px;
+
+				line-height:50px;
+            }
+
+    .fragment section[role=main] {
+        -ms-grid-row: 2;
+        height: 100%;
+        width: 100%;
+    }
+
+@media screen and (-ms-view-state: snapped) {
+    .fragment header[role=banner] {
+        -ms-grid-columns: auto 1fr;
+        margin-left: 20px;
+    }
+
+        .fragment header[role=banner] .win-backbutton {
+            margin: 0;
+            margin-right: 10px;
+            margin-top: 76px;
+        }
+
+            .fragment header[role=banner] .win-backbutton:disabled {
+                display: none;
+            }
+
+        .fragment header[role=banner] .titlearea {
+            -ms-grid-column: 2;
+            margin-left: 0;
+            margin-top: 68px;
+        }
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+    .fragment header[role=banner] {
+        -ms-grid-columns: 100px 1fr;
+    }
+
+        .fragment header[role=banner] .win-backbutton {
+            margin-left: 29px;
+        }
+}

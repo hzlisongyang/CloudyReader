@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <title>splitPage</title>
+
+    <link href="/pages/split/album.css" rel="stylesheet" />
+    <script src="/js/data.js"></script>
+    <script src="/pages/split/album.js"></script>
+    <script src="../items/items.js"></script>
+</head>
+<body>
+    <!-- 此模板用于显示下面声明的 ListView 中的每一项。-->
+      <style type="text/css">
+        #contenthost {
+            background-color:white;
+        }
+    </style>
+    <div  class="itemtemplate" data-win-control="WinJS.Binding.Template">
+        <div   class="item-album " data-win-bind="className:type" itemscope="itemscope">
+            <img  class="item-image" src="#" data-win-bind="src: backgroundImage;" />
+            <div    class="item-info" >
+                <h3  class="album-title  win-type-ellipses" data-win-bind="textContent: title"></h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- 将加载和显示的内容。 -->
+    <div class="albumspage fragment">
+        <header aria-label="Header content" role="banner">
+            <button class="win-backbutton"  aria-label="Back" disabled type="button"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle"></span>
+            </h1>
+        </header>
+
+        <section aria-label="Main content" role="main">
+            <div  class="splitslist win-selectionstylefilled" aria-label="List of groups" data-win-control="WinJS.UI.ListView"
+                 data-win-options="{
+                        selectionMode: 'none',
+                        layout: { 
+                        groupInfo: groupInfo, 
+                        type: WinJS.UI.GridLayout 
+                     } 
+                }"></div>
+        </section>
+    </div>
+                     
+
+
+    <div id="createAppBar" data-win-control="WinJS.UI.AppBar" data-win-options="">
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{icon:'more', id:'cmdMore', label:'更多', section:'global', tooltip:'Add item'}">
+        </button>
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'cmdRefresh',label:'刷新',icon:'refresh',section:'global',tooltip:'Refresh item'}">
+        </button>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,194 @@
+﻿     /* Back button.*/
+    
+       .fileViewspage .win-backbutton {
+            color:#c6c3c6;
+            border-color:#c6c3c6;
+        }
+
+       .fileViewspage .win-backbutton:hover {
+            border-width: 2px;
+            border-style: solid;
+            border-radius: 50%;
+            border-color:white;
+            color:white;
+            
+        }
+
+       .fileViewspage .win-backbutton:hover:active {
+            border-width: 2px;
+            border-style: solid;
+            border-radius: 50%;
+            border-color:white;
+            color:white;
+            background-color:transparent;
+            
+        }
+
+
+.fileViewspage section[role=main] {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+}
+
+/* 此选择器用于阻止 ui-dark/light.css 覆盖对 .win-surface
+   的更改。*/
+.fileViewspage .itemslist .win-horizontal.win-viewport .win-surface {
+    margin-bottom: 60px;
+    margin-left: 115px;
+    margin-right: 115px;
+    margin-top: 155px;
+}
+
+.fileViewspage .itemslist {
+    height: 100%;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+    .fileViewspage .itemslist .item {
+        -ms-grid-columns: 1fr;
+        -ms-grid-rows: 1fr 90px;
+        display: -ms-grid;
+        height: 250px;
+        width: 250px;
+        background-size:cover;
+        background-position:50% 10%;
+    }
+
+
+        .fileViewspage .itemslist .item .item-overlay {
+			margin-top:23px;
+			height:55px;
+            -ms-grid-row: 2;
+            -ms-grid-rows: 1fr 21px 4px;
+            display: -ms-grid;
+            padding: 10px 15px 2px 15px;
+        }
+
+            .fileViewspage .itemslist .item .item-overlay .item-title {
+                -ms-grid-row: 1;
+                overflow: hidden;
+                width: 220px;
+				font-size:20px;
+            }
+
+            .fileViewspage .itemslist .item .item-overlay .item-subtitle {
+                -ms-grid-row: 2;
+                width: 220px;
+				font-size:14px;
+            }
+
+    #titlearea {
+        width: 50px;height: 50px; position: relative;display: inline-block;background: url('/images/image-01-535x535.png');background-size: contain;left: 4.5px;top: 8.5px;
+    }
+
+
+
+
+@media screen and (-ms-view-state: fullscreen-landscape), screen and (-ms-view-state: fullscreen-portrait), screen and (-ms-view-state: filled) {
+    .fileViewspage .itemslist .item .item-overlay {
+        background: rgba(0,0,0,0.65);
+    }
+
+        .fileViewspage .itemslist .item .item-overlay .item-title {
+            color: rgba(255,255,255,0.87);
+        }
+
+        .fileViewspage .itemslist .item .item-overlay .item-subtitle {
+            color: rgba(255,255,255,0.6);
+        }
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape) and (-ms-high-contrast), screen and (-ms-view-state: fullscreen-portrait) and (-ms-high-contrast), screen and (-ms-view-state: filled) and (-ms-high-contrast) {
+    .fileViewspage .itemslist .item .item-overlay {
+        color: WindowText;
+    }
+}
+
+@media screen and (-ms-view-state: snapped) {
+    .fileViewspage section[role=main] {
+        -ms-grid-row: 2;
+        -ms-grid-row-span: 1;
+    }
+
+    .fileViewspage .itemslist {
+        margin-top: 20px;
+    }
+
+        .fileViewspage .itemslist .win-vertical.win-viewport .win-surface {
+            margin-bottom: 30px;
+        }
+
+        .fileViewspage .itemslist .win-container {
+            margin-bottom: 10px;
+            margin-left: 13px;
+            margin-right: 35px;
+            
+        }
+
+        .fileViewspage .itemslist .item {
+            -ms-grid-columns: 50px 1fr;
+            -ms-grid-rows: 1fr;
+            display: -ms-grid;
+            height: 60px;
+            width: 270px;
+            color:black;  
+            border:1px solid #ccc;
+        }
+
+            .fileViewspage .itemslist .item .item-image, .fileViewspage .itemslist .item:hover .item-image {
+                -ms-grid-column: 1;
+                -ms-grid-row-span: 1;
+                height: 60px;
+                width: 60px;
+            }
+
+            .fileViewspage .itemslist .item .item-image .bg {
+                display:none;
+            }
+
+            .fileViewspage .itemslist .item .item-overlay {
+                -ms-grid-column: 2;
+                -ms-grid-row: 1;
+                -ms-grid-row-align: stretch;
+                background: transparent;
+                display: inline-block;
+                margin-left: 10px;
+                padding: 0;
+            }
+
+
+                .fileViewspage .itemslist .item .item-overlay .item-title {
+                    margin-top: 0px;
+                    max-height: 30px;
+                    width: 202px;
+                    overflow:hidden;
+                    font-size:18px;
+                }
+
+                .fileViewspage .itemslist .item .item-overlay .item-subtitle {
+                    opacity: 0;
+                    width: 202px;
+                    
+                }
+       #pagetitle{
+            font-size:33px;
+        }
+        #titlearea {
+            width: 40px;
+            height: 40px;
+            position: relative;
+            display: inline-block;
+            background: url('/images/image-01-535x535.png');
+            background-size: contain;
+            left: 4.5px;
+            top: 8.5px;
+    }
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+    .fileViewspage .itemslist .win-horizontal.win-viewport .win-surface {
+        margin-left: 100px;
+    }
+}

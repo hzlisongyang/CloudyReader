@@ -1,0 +1,232 @@
+﻿#picHost{
+		width:100%;
+		height:100%;
+		background-color:white;
+		/*background-size:contain;
+		background-size:cover;*/
+		background-repeat:no-repeat;
+		position:fixed;
+	    /*background-size:100% 100%;*/
+        z-index:-10;
+
+	}
+
+    #picHost .logoTitle {
+        font-family:微软雅黑;
+        font-size:20px;
+    
+    }
+
+#coverContent {
+    width: auto;
+    position:absolute;
+    top:79.2%;
+    left:70px;
+
+}
+#head{
+		width:120px;
+		position:relative;
+		top:55px;
+		left:70px;
+	}
+
+#logo{
+		width:100px;
+		height:100px;
+		background-repeat:no-repeat;
+		background-size:100%;
+		background-position: 0% 0%;
+		background-origin: padding-box;
+		background-clip: border-box;
+		background-attachment: scroll;
+		background-color: transparent;
+        background-image: url('/images/metro-icon.png');
+	}
+
+
+/*
+#enterHome {
+    position:absolute;
+    top:74.5%;
+    right: 6px;
+    width:140px;
+    height:55px;
+    background-color: rgba(233, 234, 237, 0.5);
+    font-size:18px;
+    line-height: 55px;
+
+    border-style:solid;
+    text-align:center;
+    border-width:3px;
+    border-color:rgba(237, 237, 237, 0.2);
+    border-radius:30px;
+
+}
+*/
+
+/* 进入内容按钮 */
+.enterHome {
+    position:absolute;top:74.5%;right: 10px;
+}
+
+.enterHome.win-toggleswitch
+{
+    height: auto;
+    
+}
+
+.enterHome.win-toggleswitch .win-switch
+{
+    width: 140px;
+    height: 68px;
+    
+}
+
+.enterHome.win-toggleswitch .win-switch::-ms-track
+{   
+    /*轨迹*/
+    width:120px;
+    height:60px;
+    border:3.5px solid rgba(237, 237, 237, 0.2);
+    border-radius: 32px;
+    background-color: rgba(241, 241, 243, 0.10);
+    /*background-image: linear-gradient(to bottom, rgb(44, 44, 44) 0%, rgb(55, 55, 55) 100%);*/
+}
+
+.enterHome.win-toggleswitch .win-switch::-ms-fill-upper
+{
+
+    background-color: transparent;
+    margin: 0px;
+}
+
+.enterHome.win-toggleswitch .win-switch::-ms-fill-lower
+{
+    background-color:transparent;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    height: 60px;
+    border: 0px;
+}
+
+.enterHome.win-toggleswitch .win-switch::-ms-thumb
+{
+    height: 48px;
+    width: 48px;
+    border-radius: 30px;
+    margin-right: 18px;
+    margin-left: 4px;
+    border: 4.5px solid rgba(255, 255, 255, 0.80);
+    background:transparent url('/images/icon/arrow.png') center  no-repeat;
+}
+
+.fragment {
+    /* 定义包含横幅和正文的行的网格*/
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: 128px 1fr;
+    display: -ms-grid;
+    height: 100%;
+    width: 100%;
+}
+
+        progress.win-ring {
+            width: 80px;
+            height: 80px;
+        }
+        .extendedSplashScreen {
+            background-color:#fff;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            text-align: center;
+        }
+
+        .extendedSplashScreen.hidden {
+            
+        }
+
+        #extendedSplashImage {
+            position: absolute;
+            left: 371.32px;
+            top: 226.01px;
+        }
+
+        #extendedSplashProgress
+        {
+            position: absolute;
+            width: 100%;
+
+            text-align: center;
+            left: 5px;
+            top: 438.2px;
+        }
+
+
+    .fragment header[role=banner] {
+        /* 定义包含后退按钮和页标题的列的网格。*/
+        -ms-grid-columns: 120px 1fr;
+        -ms-grid-rows: 1fr;
+        display: -ms-grid;
+    }
+
+        .fragment header[role=banner] .win-backbutton {
+            margin-left: 39px;
+            margin-top: 59px;
+			
+        }
+
+        .fragment header[role=banner] .titlearea {
+            -ms-grid-column: 2;
+            margin-top: 37px;
+        }
+
+            .fragment header[role=banner] .titlearea .pagetitle {
+                width: calc(100% - 20px);
+				color:black;
+				font-size:45px;
+				margin-left:10px;
+
+				line-height:50px;
+            }
+
+    .fragment section[role=main] {
+        -ms-grid-row: 2;
+        height: 100%;
+        width: 100%;
+    }
+
+@media screen and (-ms-view-state: snapped) {
+    .fragment header[role=banner] {
+        -ms-grid-columns: auto 1fr;
+        margin-left: 20px;
+    }
+
+        .fragment header[role=banner] .win-backbutton {
+            margin: 0;
+            margin-right: 10px;
+            margin-top: 76px;
+        }
+
+            .fragment header[role=banner] .win-backbutton:disabled {
+                display: none;
+            }
+
+        .fragment header[role=banner] .titlearea {
+            -ms-grid-column: 2;
+            margin-left: 0;
+            margin-top: 68px;
+        }
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+    .fragment header[role=banner] {
+        -ms-grid-columns: 100px 1fr;
+    }
+
+        .fragment header[role=banner] .win-backbutton {
+            margin-left: 29px;
+        }
+}
