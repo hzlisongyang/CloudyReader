@@ -603,3 +603,18 @@ F:\百度云\网易云阅读\云阅读历史版本\YunYueDu - 1203\YunYueDu\bld\
 F:\百度云\网易云阅读\云阅读历史版本\YunYueDu - 1203\YunYueDu\bld\Debug\pri.resfiles
 F:\百度云\网易云阅读\云阅读历史版本\YunYueDu - 1203\YunYueDu\bld\Debug\LanguageQualifiers.txt
 F:\百度云\网易云阅读\云阅读历史版本\YunYueDu - 1203\YunYueDu\bld\Debug\ProjectArchitectures.txt
+C:\Users\Li\Desktop\CloudyReader\YunYueDu\bin\Debug\resources.pri
+C:\Users\Li\Desktop\CloudyReader\YunYueDu\bin\Debug\AppxManifest.xml
+C:\Users\Li\Desktop\CloudyReader\YunYueDu\bin\Debug\YunYueDu.build.appxrecipe
+C:\Users\Li\Desktop\CloudyReader\YunYueDu\bin\Debug\NotificationsExtensions.winmd
+C:\Users\Li\Desktop\CloudyReader\YunYueDu\bld\Debug\YunYueDu.jsprojResolveAssemblyReference.cache
+C:\Users\Li\Desktop\CloudyReader\YunYueDu\bld\Debug\priconfig.xml.intermediate
+C:\Users\Li\Desktop\CloudyReader\YunYueDu\bld\Debug\layout.resfiles.intermediate
+C:\Users\Li\Desktop\CloudyReader\YunYueDu\bld\Debug\resources.resfiles.intermediate
+C:\Users\Li\Desktop\CloudyReader\YunYueDu\bld\Debug\pri.resfiles.intermediate
+C:\Users\Li\Desktop\CloudyReader\YunYueDu\bld\Debug\priconfig.xml
+C:\Users\Li\Desktop\CloudyReader\YunYueDu\bld\Debug\layout.resfiles
+C:\Users\Li\Desktop\CloudyReader\YunYueDu\bld\Debug\resources.resfiles
+C:\Users\Li\Desktop\CloudyReader\YunYueDu\bld\Debug\pri.resfiles
+C:\Users\Li\Desktop\CloudyReader\YunYueDu\bld\Debug\LanguageQualifiers.txt
+C:\Users\Li\Desktop\CloudyReader\YunYueDu\bld\Debug\ProjectArchitectures.txt

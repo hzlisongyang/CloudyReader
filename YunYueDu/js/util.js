@@ -160,7 +160,7 @@
                     var lastUpdated;
 
                     for (var i = entrys.length - 1, len = entrys.length; i >= 0; i--) {
-                        var coverImage = entrys[i].selectNodes("link")[2].attributes.getNamedItem("href").innerText;
+                        var coverImage = entrys[i].selectNodes("link")[1].attributes.getNamedItem("href").innerText;
                         var updated = entrys[i].selectSingleNode("updated").innerText;
 
                         !storage["currentIndex"] ? storage["currentIndex"] = 0 : 1;
