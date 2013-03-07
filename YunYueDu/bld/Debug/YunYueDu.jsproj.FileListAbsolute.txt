@@ -618,3 +618,14 @@ C:\Users\Li\Desktop\CloudyReader\YunYueDu\bld\Debug\resources.resfiles
 C:\Users\Li\Desktop\CloudyReader\YunYueDu\bld\Debug\pri.resfiles
 C:\Users\Li\Desktop\CloudyReader\YunYueDu\bld\Debug\LanguageQualifiers.txt
 C:\Users\Li\Desktop\CloudyReader\YunYueDu\bld\Debug\ProjectArchitectures.txt
+C:\Users\松阳\Desktop\CloudyReader\YunYueDu\bin\Debug\resources.pri
+C:\Users\松阳\Desktop\CloudyReader\YunYueDu\bin\Debug\AppxManifest.xml
+C:\Users\松阳\Desktop\CloudyReader\YunYueDu\bin\Debug\YunYueDu.build.appxrecipe
+C:\Users\松阳\Desktop\CloudyReader\YunYueDu\bin\Debug\NotificationsExtensions.winmd
+C:\Users\松阳\Desktop\CloudyReader\YunYueDu\bld\Debug\YunYueDu.jsprojResolveAssemblyReference.cache
+C:\Users\松阳\Desktop\CloudyReader\YunYueDu\bld\Debug\priconfig.xml
+C:\Users\松阳\Desktop\CloudyReader\YunYueDu\bld\Debug\layout.resfiles
+C:\Users\松阳\Desktop\CloudyReader\YunYueDu\bld\Debug\resources.resfiles
+C:\Users\松阳\Desktop\CloudyReader\YunYueDu\bld\Debug\pri.resfiles
+C:\Users\松阳\Desktop\CloudyReader\YunYueDu\bld\Debug\LanguageQualifiers.txt
+C:\Users\松阳\Desktop\CloudyReader\YunYueDu\bld\Debug\ProjectArchitectures.txt
