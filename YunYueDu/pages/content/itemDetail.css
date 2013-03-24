@@ -7,6 +7,7 @@
     position: relative;
     width: 100%;
     z-index: 0;
+    overflow-y:hidden;
 }
 
 
@@ -15,15 +16,23 @@
         /* 定义多列，以便在默认情况下水平滚动文章内容。*/
         
         column-gap: 80px;
-        column-width: 700px;
-        height: calc(100% - 183px);
+        column-width: 550px;
+        height: calc(100% - 83px);
         margin-left: 120px;
-        margin-top: 133px;
-        width: 700px;
+        margin-top: 60px;
+        width: 550px;
         color:black;
         
     }
+    .itemdetailpage .content p {
+        font-size:20px;
+    }
+    .itemdetailpage .content div {
+        font-size:20px;
+    }
 
+
+    
 /*img*/
     .img-c{
         position:relative;width:272px;

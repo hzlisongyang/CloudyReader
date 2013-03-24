@@ -16,7 +16,7 @@
     <AppXManifest Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-03-10T08:03:18.287</Modified>
+      <Modified>2013-03-24T14:43:04.338</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -46,7 +46,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\pages\content\content.css">
       <PackagePath>pages\content\content.css</PackagePath>
-      <Modified>2012-11-18T07:19:57.000</Modified>
+      <Modified>2013-03-24T14:31:53.764</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\pages\content\contextControl.css">
       <PackagePath>pages\content\contextControl.css</PackagePath>
@@ -58,19 +58,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\pages\content\itemDetail.css">
       <PackagePath>pages\content\itemDetail.css</PackagePath>
-      <Modified>2012-11-19T03:58:37.000</Modified>
+      <Modified>2013-03-24T23:16:21.691</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\pages\content\flipView.css">
       <PackagePath>pages\content\flipView.css</PackagePath>
       <Modified>2012-11-21T09:21:01.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\pages\content\pris.css">
-      <PackagePath>pages\content\pris.css</PackagePath>
-      <Modified>2012-11-15T07:27:51.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\pages\content\stylesheet.css">
-      <PackagePath>pages\content\stylesheet.css</PackagePath>
-      <Modified>2012-11-19T03:50:54.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\pages\cover\cover.css">
       <PackagePath>pages\cover\cover.css</PackagePath>
@@ -271,7 +263,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\pages\content\content.js">
       <PackagePath>pages\content\content.js</PackagePath>
-      <Modified>2012-11-26T06:05:28.000</Modified>
+      <Modified>2013-03-24T23:23:16.822</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\pages\content\flipView.js">
       <PackagePath>pages\content\flipView.js</PackagePath>
@@ -279,11 +271,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\pages\content\itemDetail.js">
       <PackagePath>pages\content\itemDetail.js</PackagePath>
-      <Modified>2012-11-19T05:22:23.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\pages\content\pris.js">
-      <PackagePath>pages\content\pris.js</PackagePath>
-      <Modified>2012-11-12T07:39:12.000</Modified>
+      <Modified>2013-03-24T23:30:41.818</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\pages\cover\cover.js">
       <PackagePath>pages\cover\cover.js</PackagePath>
@@ -307,7 +295,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\pages\content\content.html">
       <PackagePath>pages\content\content.html</PackagePath>
-      <Modified>2012-11-21T07:43:54.000</Modified>
+      <Modified>2013-03-24T14:31:53.733</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\pages\content\flipView.html">
       <PackagePath>pages\content\flipView.html</PackagePath>
@@ -315,7 +303,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\pages\content\itemDetail.html">
       <PackagePath>pages\content\itemDetail.html</PackagePath>
-      <Modified>2012-11-21T07:49:04.000</Modified>
+      <Modified>2013-03-24T23:29:46.398</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\pages\cover\cover.html">
       <PackagePath>pages\cover\cover.html</PackagePath>
@@ -339,7 +327,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2013-03-10T08:03:18.043</Modified>
+      <Modified>2013-03-24T14:43:03.200</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

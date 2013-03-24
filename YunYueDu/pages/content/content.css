@@ -1,7 +1,7 @@
 ﻿.fragment {
     /* 定义包含横幅和正文的行的网格*/
     -ms-grid-columns: 1fr;
-    -ms-grid-rows: 128px 1fr;
+    -ms-grid-rows: 0px 1fr;
     display: -ms-grid;
     height: 100%;
     width: 100%;

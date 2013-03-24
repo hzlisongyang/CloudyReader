@@ -114,9 +114,6 @@
     <Content Include="pages\content\itemDetail.html" />
     <Content Include="pages\content\itemDetail.js" />
     <Content Include="pages\content\flipView.css" />
-    <Content Include="pages\content\pris.css" />
-    <Content Include="pages\content\pris.js" />
-    <Content Include="pages\content\stylesheet.css" />
     <Content Include="pages\cover\cover.css" />
     <Content Include="pages\cover\cover.html" />
     <Content Include="pages\cover\cover.js" />

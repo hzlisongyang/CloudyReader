@@ -11,17 +11,21 @@
 
     ui.Pages.define("/pages/content/content.html", {
         /// <field type="WinJS.Binding.List" />
-
-        ready: function (element, options) {
-            // var listView = element.querySelector(".itemslist") .winControl;
+        init: function(){
             var content = element.querySelector(".item-content");
-            //console.log(content.textContent);
-            var htmlContent = document.createElement("div");
+           //console.log(content.textContent);
+           var htmlContent = document.createElement("div");
             
            htmlContent.innerHTML = toStaticHTML(Data.htmlcontent);
+
+           content.appendChild(htmlContent);
+        },
+        ready: function (element, options) {
+            // var listView = element.querySelector(".itemslist") .winControl;
+
             console.log(htmlContent.innerHTML);
 
-            content.appendChild(htmlContent);
+            //var  document.createElement("style");
 
             if (element.querySelectorAll(".img-c a")) {
                 var imgObjects = element.querySelectorAll(".img-c a");

@@ -2,6 +2,7 @@
     "use strict";
 
     WinJS.UI.Pages.define("/pages/content/itemDetail.html", {
+
         // 每当用户导航至此页面时都要调用此功能。它
         // 使用应用程序的数据填充页面元素。
         ready: function (element, options) {
@@ -14,12 +15,18 @@
             console.log(htmlContent.innerHTML);
 
             content.appendChild(htmlContent);
-
-            if (element.querySelectorAll(".img-c a")) {
-                var imgObjects = element.querySelectorAll(".img-c a");
+            
+            if (element.querySelectorAll(".img .img-2 a")) {
+                var imgObjects = element.querySelectorAll(".img .img-2 a");
                 for (var i = 0; i < imgObjects.length; i++) {
                     imgObjects[i].addEventListener('click', ImgHandler, false);
                 }
+            }
+            var imgs = document.querySelectorAll(".img-2");
+            for (var i = 0, len = imgs.length; i < len; i++) {
+                imgs[i].style.textAlign = "center";
+                var img = getComputedStyle(imgs[i]);
+                console.log(img.width);
             }
         }
     });
