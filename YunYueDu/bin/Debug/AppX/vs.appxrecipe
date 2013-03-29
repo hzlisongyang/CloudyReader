@@ -218,7 +218,7 @@
     <AppxPackagedFile Include="C:\Users\松阳\Desktop\CloudyReader\YunYueDu\images\splashscreen.png">
       <PackagePath>images\splashscreen.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-03-25T02:07:47.321</Modified>
+      <Modified>2013-03-29T08:30:07.359</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\松阳\Desktop\CloudyReader\YunYueDu\images\150150.png">
       <PackagePath>images\150150.png</PackagePath>
