@@ -182,25 +182,25 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\松阳\Desktop\CloudyReader\YunYueDu\images\image-01-535x535.png">
       <PackagePath>images\image-01-535x535.png</PackagePath>
-      <Modified>2013-03-07T03:07:58.732</Modified>
+      <Modified>2013-03-29T08:42:45.555</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\松阳\Desktop\CloudyReader\YunYueDu\images\24-24.png">
       <PackagePath>images\24-24.png</PackagePath>
-      <Modified>2013-03-07T03:07:58.702</Modified>
+      <Modified>2013-03-29T08:37:21.209</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\松阳\Desktop\CloudyReader\YunYueDu\images\310150.png">
       <PackagePath>images\310150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-03-07T03:07:58.702</Modified>
+      <Modified>2013-03-29T08:40:36.673</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\松阳\Desktop\CloudyReader\YunYueDu\images\smalllogo12.png">
       <PackagePath>images\smalllogo12.png</PackagePath>
-      <Modified>2013-03-07T03:07:58.742</Modified>
+      <Modified>2013-03-29T08:46:30.500</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\松阳\Desktop\CloudyReader\YunYueDu\images\storelogo.png">
       <PackagePath>images\storelogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-03-07T03:07:58.747</Modified>
+      <Modified>2013-03-29T08:47:31.247</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\松阳\Desktop\CloudyReader\YunYueDu\images\logo.png">
       <PackagePath>images\logo.png</PackagePath>
@@ -208,12 +208,12 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\松阳\Desktop\CloudyReader\YunYueDu\images\metro-icon.png">
       <PackagePath>images\metro-icon.png</PackagePath>
-      <Modified>2013-03-07T03:07:58.734</Modified>
+      <Modified>2013-03-29T08:44:11.435</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\松阳\Desktop\CloudyReader\YunYueDu\images\smalllogo.png">
       <PackagePath>images\smalllogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-03-07T03:07:58.734</Modified>
+      <Modified>2013-03-29T08:45:17.189</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\松阳\Desktop\CloudyReader\YunYueDu\images\splashscreen.png">
       <PackagePath>images\splashscreen.png</PackagePath>
@@ -223,7 +223,7 @@
     <AppxPackagedFile Include="C:\Users\松阳\Desktop\CloudyReader\YunYueDu\images\150150.png">
       <PackagePath>images\150150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-03-07T03:07:58.701</Modified>
+      <Modified>2013-03-29T08:39:26.030</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\松阳\Desktop\CloudyReader\YunYueDu\js\add.js">
       <PackagePath>js\add.js</PackagePath>
