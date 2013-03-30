@@ -608,10 +608,6 @@ C:\Users\Li\Desktop\CloudyReader\YunYueDu\bin\Debug\AppxManifest.xml
 C:\Users\Li\Desktop\CloudyReader\YunYueDu\bin\Debug\YunYueDu.build.appxrecipe
 C:\Users\Li\Desktop\CloudyReader\YunYueDu\bin\Debug\NotificationsExtensions.winmd
 C:\Users\Li\Desktop\CloudyReader\YunYueDu\bld\Debug\YunYueDu.jsprojResolveAssemblyReference.cache
-C:\Users\Li\Desktop\CloudyReader\YunYueDu\bld\Debug\priconfig.xml.intermediate
-C:\Users\Li\Desktop\CloudyReader\YunYueDu\bld\Debug\layout.resfiles.intermediate
-C:\Users\Li\Desktop\CloudyReader\YunYueDu\bld\Debug\resources.resfiles.intermediate
-C:\Users\Li\Desktop\CloudyReader\YunYueDu\bld\Debug\pri.resfiles.intermediate
 C:\Users\Li\Desktop\CloudyReader\YunYueDu\bld\Debug\priconfig.xml
 C:\Users\Li\Desktop\CloudyReader\YunYueDu\bld\Debug\layout.resfiles
 C:\Users\Li\Desktop\CloudyReader\YunYueDu\bld\Debug\resources.resfiles
