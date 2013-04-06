@@ -14,6 +14,7 @@
     <link href="/pages/items/items.css" rel="stylesheet" />
     <script src="/pages/items/items.js"></script>
     <script src="../../js/util.js"></script>
+
 </head>
 <body>
      <style type="text/css">
@@ -21,6 +22,12 @@
             background-color:white;
         }
     </style>
+    <div id="loginForm" style="position:absolute;width:420px;height:200px;z-index:10;border:1px solid black;background:white;border-radius:10px;left:calc(30%);top:calc(30%);padding-top:100px;padding-left:80px;display:none;">
+        <label style="color:black;">账号:</label><input id="account" style="border:1px solid black;" type="text"  placeholder="请输入账号" /><br />
+        <label style="color:black;">密码:</label><input id="password" style="border:1px solid black;" type="password"  placeholder="请输入密码"/><br />
+        <input id="login" type="button" style="border:1px solid black;color:black;margin-left:50px;margin-top:20px;" value="登录"/>
+        <input id="close" type="button" style="border:1px solid black;color:black;margin-left:50px;margin-top:20px;" value="取消"/>
+    </div>
     <!-- 此模板用于显示下面声明的 ListView 中的每一项。 -->
     <div class="itemtemplate" data-win-control="WinJS.Binding.Template">
         <div  class="item">
@@ -57,7 +64,14 @@
         </button>
         <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'cmdCover',label:'封面',icon:'page2',section:'selection',tooltip:'Back cover'}">
         </button>
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'cmdRegister',label:'注册',icon:'page2',section:'selection',tooltip:'Back cover'}">
+        </button>
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'cmdLogin',label:'登录',icon:'page2',section:'selection',tooltip:'Back cover'}">
+        </button>
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'cmdGet',label:'获取',icon:'page2',section:'selection',tooltip:'Back cover'}">
+        </button>
     </div>
+
 
 </body>
 </html>

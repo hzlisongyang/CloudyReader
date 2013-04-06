@@ -47,7 +47,12 @@
             document.getElementById("cmdAdd").addEventListener("click", doClickAdd, false);
             document.getElementById("cmdRefresh").addEventListener("click", doClickRefresh, false);
             document.getElementById("cmdCover").addEventListener("click", backCover, false);
-
+            document.getElementById("cmdRegister").addEventListener("click", doRegister, false);
+            document.getElementById("cmdLogin").addEventListener("click", doLogin, false);
+            document.getElementById("close").addEventListener("click", doClose, false);
+            document.getElementById("login").addEventListener("click", login, false);
+            document.getElementById("cmdGet").addEventListener("click", getShare, false);
+            
                 var listView = element.querySelector(".itemslist").winControl;
                 listView.itemDataSource = Data.items.dataSource;
                 listView.itemTemplate = ItemsTemplate;// element.querySelector(".itemtemplate");
@@ -123,7 +128,20 @@
                                 var updated = updateTime.substring(5, 10) + " " + updateTime.substring(11, 16);
                                 var type = null;
                                 var content = entrys[i].childNodes.getAt(6).innerText;
-                                var backgroundImage = entrys[i].childNodes.length == 9 ? entrys[i].childNodes.getAt(7).attributes.getNamedItem("href").innerText : "";
+                                var backgroundImage = "";
+
+
+                                for (var j = 0 ; j < entrys[i].childNodes.length; j++) {
+                                    var nodeName = entrys[i].childNodes[j].nodeName;
+                                    var node = entrys[i].childNodes[j];
+                                    if (nodeName == "pris:image_thumbnail") {
+                                        backgroundImage = node.attributes.getNamedItem("href").innerText;
+                                    }
+
+                                }
+
+                                console.log(currItem.readType, "background",backgroundImage);
+
                                 //console.log("进入了",Data.global.currentReadType);
                                 if (Data.global.currentReadType == 'album') {
                                     type = "item-album";
@@ -146,7 +164,7 @@
                                     updated: updated,
                                     content: content,
                                     backgroundImage: backgroundImage,
-                                    displayType: entrys[i].childNodes.length == 9 ? "block" : "none",
+                                    displayType: backgroundImage.length>2? "block" : "none",
                                     type:type
                                 });
                             }
@@ -226,5 +244,64 @@
 
     function backCover() {
         WinJS.Navigation.navigate('/pages/cover/cover.html');
+    }
+
+    function doRegister() {
+        var appBar = document.querySelector("#createAppBar").winControl;
+        appBar.hide();
+
+        window.open('http://paiege.duapp.com/register.html', '_blank', 'location=yes');
+        //SubCentre.getSublist();
+    }
+    function doLogin() {
+        var appBar = document.querySelector("#createAppBar").winControl;
+        appBar.hide();
+
+        document.getElementById("loginForm").style.display = "block";
+        //SubCentre.getSublist();
+    }
+    function doClose() {
+        document.getElementById("loginForm").style.display = "none";
+
+        //SubCentre.getSublist();
+    }
+    function login() {
+        var account = document.getElementById("account").value;
+        var password = document.getElementById("password").value;
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+            if(xhr.readyState ==4 && xhr.status == 200){
+                console.log(xhr.responseText);
+                var value = xhr.responseText;
+                var subId = window.localStorage["subId"];
+                if (value!="no") {
+                    WinJS.UI.processAll().then(function () {
+                        document.getElementById("loginForm").style.display = "none";
+                        console.log(window.localStorage["subId"].length);
+                    }).done(function () {
+                        navigator.notification.alert("登录成功");
+                    });
+                } else {
+                   
+                    navigator.notification.alert("账号或密码错误");
+                }
+            }
+        }
+        var url = "http://paiege.duapp.com/mlogin.php?account=" + account + "&password=" + password;
+        navigator.no
+        xhr.open("GET",url,false);
+        xhr.send(null);
+        getCeolocation();
+    }
+
+    function getShare() {
+        var loc = "";
+        navigator.geolocation.getCurrentPosition(function (position) {
+            loc = position.coords.latitude + position.coords.longitude;
+        }, function () {
+            console.log("haha");
+        });
+       // var a =navigator.notification.confirm("哈哈哈哈");
+        navigator.notification.alert("成功更新"+2+"条记录");
     }
 })();

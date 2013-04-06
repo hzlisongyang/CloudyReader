@@ -17,7 +17,6 @@
     app.addEventListener("activated", function (args) {
         if (args.detail.kind === activation.ActivationKind.launch) {
             if (args.detail.previousExecutionState !== activation.ApplicationExecutionState.terminated) {
-
                 splash = args.detail.splashScreen;
                 var extendedSplashImage = document.getElementById("extendedSplashImage");
                 var extendedSplashProgress = document.getElementById("extendedSplashProgress");
@@ -26,10 +25,8 @@
                 extendedSplashImage.style.height = splash.imageLocation.height + "px";
                 extendedSplashImage.style.width = splash.imageLocation.width + "px";
                 extendedSplashProgress.style.top = (250 + splash.imageLocation.y) + "px";
-                Init.getCovers();//picHandler
-
-               
-
+                
+                Init.getCovers() && navigator.splashscreen.hidden();//picHandler
 
             } else {
                 // TODO: 此应用程序已从挂起状态重新激活。
@@ -48,8 +45,8 @@
                 console.log(propertyName);
             }
             var networkState = navigator.connection.type;
-            console.log(networkState);
-
+            console.log(networkState,"网络状态");
+            //unknown
 
             args.setPromise(WinJS.UI.processAll().then(function () {
 

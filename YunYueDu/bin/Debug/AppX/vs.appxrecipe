@@ -5,7 +5,7 @@
     <WindowsUser>Li</WindowsUser>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
-    <RegisteredManifestChecksum>6BA5D39A16F64FE6B993317A00F849349F610522EC9E9857965507511EA227C3</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>03408BFA213E21AF2394131D23E6F4EE84D87DC08189FC2C237A49D1327A8FD9</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>c57b9dc1-2f64-4789-8892-e2cf3ee53910_1.0.0.1_neutral__7w37ecey2cv16</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>c57b9dc1-2f64-4789-8892-e2cf3ee53910_7w37ecey2cv16!App</RegisteredUserModeAppID>
     <RegisteredPackageID>c57b9dc1-2f64-4789-8892-e2cf3ee53910</RegisteredPackageID>
@@ -16,7 +16,7 @@
     <AppXManifest Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-03-31T04:16:22.858</Modified>
+      <Modified>2013-04-06T03:51:48.211</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -58,7 +58,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\pages\content\itemDetail.css">
       <PackagePath>pages\content\itemDetail.css</PackagePath>
-      <Modified>2013-03-30T14:50:00.689</Modified>
+      <Modified>2013-04-06T00:42:59.911</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\pages\content\flipView.css">
       <PackagePath>pages\content\flipView.css</PackagePath>
@@ -231,7 +231,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\js\cordova-2.3.0.js">
       <PackagePath>js\cordova-2.3.0.js</PackagePath>
-      <Modified>2013-03-30T14:50:00.667</Modified>
+      <Modified>2013-04-06T07:40:04.988</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\js\data.js">
       <PackagePath>js\data.js</PackagePath>
@@ -239,7 +239,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\js\default.js">
       <PackagePath>js\default.js</PackagePath>
-      <Modified>2013-03-30T14:50:00.669</Modified>
+      <Modified>2013-04-06T04:39:35.236</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\js\jquery.mobile-1.3.0.min.js">
       <PackagePath>js\jquery.mobile-1.3.0.min.js</PackagePath>
@@ -251,11 +251,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\js\util.js">
       <PackagePath>js\util.js</PackagePath>
-      <Modified>2013-03-30T14:50:00.675</Modified>
+      <Modified>2013-04-04T05:56:29.096</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\pages\addSub\addSub.js">
       <PackagePath>pages\addSub\addSub.js</PackagePath>
-      <Modified>2013-03-30T14:50:00.679</Modified>
+      <Modified>2013-04-05T05:08:38.994</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\pages\addSub\worker.js">
       <PackagePath>pages\addSub\worker.js</PackagePath>
@@ -275,11 +275,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\pages\cover\cover.js">
       <PackagePath>pages\cover\cover.js</PackagePath>
-      <Modified>2013-03-30T14:50:00.694</Modified>
+      <Modified>2013-04-04T13:36:48.524</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\pages\items\items.js">
       <PackagePath>pages\items\items.js</PackagePath>
-      <Modified>2013-03-30T14:50:00.698</Modified>
+      <Modified>2013-04-06T08:15:51.333</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\pages\split\album.js">
       <PackagePath>pages\split\album.js</PackagePath>
@@ -287,11 +287,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\pages\split\news.js">
       <PackagePath>pages\split\news.js</PackagePath>
-      <Modified>2013-03-30T14:50:00.708</Modified>
+      <Modified>2013-04-06T05:25:10.217</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\pages\addSub\addSub.html">
       <PackagePath>pages\addSub\addSub.html</PackagePath>
-      <Modified>2013-03-30T14:50:00.679</Modified>
+      <Modified>2013-04-05T08:26:58.716</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\pages\content\content.html">
       <PackagePath>pages\content\content.html</PackagePath>
@@ -311,7 +311,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\pages\items\items.html">
       <PackagePath>pages\items\items.html</PackagePath>
-      <Modified>2013-03-30T14:50:00.697</Modified>
+      <Modified>2013-04-06T05:08:35.598</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\pages\split\album.html">
       <PackagePath>pages\split\album.html</PackagePath>
@@ -319,15 +319,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\pages\split\news.html">
       <PackagePath>pages\split\news.html</PackagePath>
-      <Modified>2013-03-30T14:50:00.707</Modified>
+      <Modified>2013-04-06T05:03:37.882</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\default.html">
       <PackagePath>default.html</PackagePath>
-      <Modified>2013-03-30T14:50:00.574</Modified>
+      <Modified>2013-04-05T11:55:13.298</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2013-03-30T14:50:40.369</Modified>
+      <Modified>2013-04-06T03:51:46.114</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

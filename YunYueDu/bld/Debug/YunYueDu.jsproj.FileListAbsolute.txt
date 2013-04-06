@@ -629,3 +629,7 @@ C:\Users\松阳\Desktop\CloudyReader\YunYueDu\bld\Debug\priconfig.xml.intermedia
 C:\Users\松阳\Desktop\CloudyReader\YunYueDu\bld\Debug\layout.resfiles.intermediate
 C:\Users\松阳\Desktop\CloudyReader\YunYueDu\bld\Debug\resources.resfiles.intermediate
 C:\Users\松阳\Desktop\CloudyReader\YunYueDu\bld\Debug\pri.resfiles.intermediate
+C:\Users\Li\Desktop\CloudyReader\YunYueDu\bld\Debug\priconfig.xml.intermediate
+C:\Users\Li\Desktop\CloudyReader\YunYueDu\bld\Debug\layout.resfiles.intermediate
+C:\Users\Li\Desktop\CloudyReader\YunYueDu\bld\Debug\resources.resfiles.intermediate
+C:\Users\Li\Desktop\CloudyReader\YunYueDu\bld\Debug\pri.resfiles.intermediate

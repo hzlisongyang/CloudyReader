@@ -213,13 +213,15 @@
 
                     return WinJS.Navigation.navigate('/pages/cover/cover.html');
                 }
-
-                var msg = new Windows.UI.Popups.MessageDialog("网络错误");
+                navigator.notification.alert("网络错误");
+                navigator.notification.beep(2);
+/*                var msg = new Windows.UI.Popups.MessageDialog("网络错误");
                 msg.title = "提示";
                 msg.commands.append(new Windows.UI.Popups.UICommand("关闭", null, 1));
 
                 msg.cancelCommandIndex = 1;
                 msg.showAsync();
+*/
             }
        );
     };

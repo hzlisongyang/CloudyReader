@@ -20,7 +20,27 @@
 
            var uri = Data.AddSub.subList.getAt(0).uri;
            SubCentre.getDetails(uri, itemInvokedHandler);
-           
+           document.addEventListener("backbutton", function () {
+               if (document.querySelector("#sub_button").textContent == "取消订阅") {
+
+                   idArr.splice(arrIndex, 1);
+                   window.localStorage["subId"] = idArr.join("+");
+                   document.querySelector("#sub_button").textContent = "添加订阅"
+                   document.querySelector("#sub_button").style.backgroundColor = "red";
+                   Init.itemsUpdate();
+                   arrIndex = idArr.length - 1;
+               } else {
+
+                   window.localStorage["subId"] += "+" + id;
+                   idArr = String(window.localStorage["subId"]).split("+");
+                   arrIndex = idArr.length - 1;
+
+                   document.querySelector("#sub_button").style.backgroundColor = "#ccc";
+                   document.querySelector("#sub_button").textContent = "取消订阅";
+                   Init.itemsUpdate();
+
+               }
+           }, false);
         },
 
         // 此功能更新页面布局以响应 viewState 更改。

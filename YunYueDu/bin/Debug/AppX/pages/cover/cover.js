@@ -117,7 +117,6 @@
     function notifications() {
         var notifications = Windows.UI.Notifications;//TileWideImageAndText01
         notifications.TileUpdateManager.createTileUpdaterForApplication().enableNotificationQueue(true);
-
         for (var i = 0; i <= 4; i++) {
             if (Data.covers[i]) {
                 var template = notifications.TileTemplateType.tileWideImageAndText01;
@@ -131,7 +130,6 @@
                 tileTextAttributes[0].appendChild(tileXml.createTextNode(Data.covers[i].content));
                 var tileNotification = new notifications.TileNotification(tileXml);
                 notifications.TileUpdateManager.createTileUpdaterForApplication().update(tileNotification);
-
             }
         }
     }

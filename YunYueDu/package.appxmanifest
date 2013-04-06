@@ -15,7 +15,7 @@
   </Resources>
   <Applications>
     <Application Id="App" StartPage="default.html">
-      <VisualElements DisplayName="YunYueDu" Logo="images\150150.png" SmallLogo="images\smalllogo.png" Description="YunYueDu" ForegroundText="light" BackgroundColor="#de2d31">
+      <VisualElements DisplayName="YueDuQi" Logo="images\150150.png" SmallLogo="images\smalllogo.png" Description="阅读器" ForegroundText="light" BackgroundColor="#de2d31">
         <DefaultTile ShortName="资讯阅读器" WideLogo="images\310150.png" ShowName="allLogos" />
         <SplashScreen Image="images\splashscreen.png" BackgroundColor="white" />
       </VisualElements>
@@ -33,5 +33,6 @@
   <Capabilities>
     <Capability Name="picturesLibrary" />
     <Capability Name="internetClient" />
+    <DeviceCapability Name="location" />
   </Capabilities>
 </Package>

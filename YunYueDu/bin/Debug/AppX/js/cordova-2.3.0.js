@@ -7271,7 +7271,7 @@ module.exports = {
 
         var btnList = [];
         function commandHandler (command) {
-            win(btnList[command.label]);
+                win(btnList[command.label]);
         }
 
         var md = new Windows.UI.Popups.MessageDialog(message, _title);

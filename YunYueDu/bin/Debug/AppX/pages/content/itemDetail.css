@@ -8,8 +8,10 @@
     z-index: 0;
     overflow:hidden;
 }
-
-
+.itemdetailpage li {
+    list-style:none;
+}
+    
 
     .itemdetailpage .content .article {
         /* 定义多列，以便在默认情况下水平滚动文章内容。*/
@@ -26,13 +28,26 @@
     }
     .itemdetailpage .content p {
         font-size:20px;
+        line-height:34px;
+        text-indent:2em;
     }
     .itemdetailpage .content div {
         font-size:20px;
+        line-height:34px;
     }
- 
 
-    
+.itemdetailpage .fs-quote {
+    font-size:23px !important;
+    line-height:36px;
+}
+ .itemdetailpage .fs-title {
+    font-size:36px !important;
+    line-height:44px;
+}   
+ .itemdetailpage .fs-info {
+    font-size:20px !important;
+    color:rgb(69, 55, 55);
+}   
 /*img*/
     .img-c{
         position:relative;width:272px;
