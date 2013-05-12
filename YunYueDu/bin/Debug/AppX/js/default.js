@@ -12,8 +12,6 @@
     var dismissed = false;
     var coordinates = { x: 0, y: 0, width: 0, height: 0 };
 
-
-
     app.addEventListener("activated", function (args) {
         if (args.detail.kind === activation.ActivationKind.launch) {
             if (args.detail.previousExecutionState !== activation.ApplicationExecutionState.terminated) {
@@ -24,8 +22,7 @@
                 extendedSplashImage.style.left = splash.imageLocation.x + "px";
                 extendedSplashImage.style.height = splash.imageLocation.height + "px";
                 extendedSplashImage.style.width = splash.imageLocation.width + "px";
-                extendedSplashProgress.style.top = (250 + splash.imageLocation.y) + "px";
-                
+                extendedSplashProgress.style.top = (250 + splash.imageLocation.y) + "px";             
                 Init.getCovers() && navigator.splashscreen.hidden();//picHandler
 
             } else {
@@ -37,37 +34,27 @@
                 nav.history = app.sessionState.history;
             }
             var capture = navigator.device.capture;
-            /**
-            *phonegap 一些特性
-            */
-            for (var propertyName in capture)
-            {
-                console.log(propertyName);
-            }
+
             var networkState = navigator.connection.type;
-            console.log(networkState,"网络状态");
-            //unknown
+            if (networkState !== Connection.NONE) {
+                args.setPromise(WinJS.UI.processAll().then(function () {
+                    if (nav.location) {
+                        nav.history.current.initialPlaceholder = true;
+                        return nav.navigate(nav.location, nav.state);
+                    } else {
+                        WinJS.Promise.timeout(1000).then(function () {
+                            if (window.localStorage["subId"]) {
+                                Init.subList();//存在subId
+                            } else {
+                                Init.getList();
+                            }
+                        });
+                    }
+                }));
+            } else {
+                navigator.notification.alert("网络错误");
+            }
 
-            args.setPromise(WinJS.UI.processAll().then(function () {
-
-
-
-                if (nav.location) {
-                    nav.history.current.initialPlaceholder = true;
-                    return nav.navigate(nav.location, nav.state);
-                } else {
-                    //console.log(Init.State.networkState);
-                    WinJS.Promise.timeout(1000).then(function () {
-                        if (window.localStorage["subId"]) {
-                            Init.subList();
-                        } else {
-                            Init.getList();
-                        }
-                    });
-                    
-                }
-
-            }));
         }
     });
 
@@ -78,10 +65,6 @@
         //，请调用 args.setPromise()。
         app.sessionState.history = nav.history;
     };
-
-
-
-
 
     app.start();
 })();

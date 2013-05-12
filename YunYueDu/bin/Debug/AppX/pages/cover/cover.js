@@ -28,10 +28,7 @@
         var picHost = document.getElementById("picHost");
         
         picHost.style.zIndex = -10;
-        //picHost.style.opacity = 0;
- /*       picHost.style.display = "hidden";
-        WinJS.Promise.cancel;
-        clearInterval(window.tii);*/
+
 
         WinJS.Navigation.navigate('/pages/items/items.html');
     }

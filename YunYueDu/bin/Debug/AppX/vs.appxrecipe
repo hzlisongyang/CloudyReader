@@ -5,7 +5,7 @@
     <WindowsUser>Li</WindowsUser>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
-    <RegisteredManifestChecksum>03408BFA213E21AF2394131D23E6F4EE84D87DC08189FC2C237A49D1327A8FD9</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>4EC82A72489EE7D85A538991DE7498CC8313125A40193DBF54804DC474002C0F</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>c57b9dc1-2f64-4789-8892-e2cf3ee53910_1.0.0.1_neutral__7w37ecey2cv16</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>c57b9dc1-2f64-4789-8892-e2cf3ee53910_7w37ecey2cv16!App</RegisteredUserModeAppID>
     <RegisteredPackageID>c57b9dc1-2f64-4789-8892-e2cf3ee53910</RegisteredPackageID>
@@ -16,7 +16,7 @@
     <AppXManifest Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-04-06T03:51:48.211</Modified>
+      <Modified>2013-05-04T11:00:10.211</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -239,7 +239,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\js\default.js">
       <PackagePath>js\default.js</PackagePath>
-      <Modified>2013-04-06T04:39:35.236</Modified>
+      <Modified>2013-05-11T12:29:25.055</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\js\jquery.mobile-1.3.0.min.js">
       <PackagePath>js\jquery.mobile-1.3.0.min.js</PackagePath>
@@ -251,7 +251,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\js\util.js">
       <PackagePath>js\util.js</PackagePath>
-      <Modified>2013-04-04T05:56:29.096</Modified>
+      <Modified>2013-05-11T11:32:48.867</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\pages\addSub\addSub.js">
       <PackagePath>pages\addSub\addSub.js</PackagePath>
@@ -275,7 +275,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\pages\cover\cover.js">
       <PackagePath>pages\cover\cover.js</PackagePath>
-      <Modified>2013-04-04T13:36:48.524</Modified>
+      <Modified>2013-05-11T12:32:23.934</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\pages\items\items.js">
       <PackagePath>pages\items\items.js</PackagePath>
@@ -287,7 +287,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\pages\split\news.js">
       <PackagePath>pages\split\news.js</PackagePath>
-      <Modified>2013-04-06T05:25:10.217</Modified>
+      <Modified>2013-04-27T13:18:46.278</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\pages\addSub\addSub.html">
       <PackagePath>pages\addSub\addSub.html</PackagePath>
@@ -333,9 +333,9 @@
   <ItemGroup>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.WinJS.1.0\1.0\">
       <Name>Microsoft.WinJS.1.0</Name>
-      <Version>1.0.9200.20512</Version>
+      <Version>1.0.9200.20602</Version>
       <Architecture>Neutral</Architecture>
-      <FrameworkIdentity>Name=Microsoft.WinJS.1.0, MinVersion=1.0.9200.20512</FrameworkIdentity>
+      <FrameworkIdentity>Name=Microsoft.WinJS.1.0, MinVersion=1.0.9200.20602</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.WinJS.1.0\1.0\Microsoft.WinJS.1.0.appx</AppxLocation>
     </ResolvedSDKReference>
   </ItemGroup>

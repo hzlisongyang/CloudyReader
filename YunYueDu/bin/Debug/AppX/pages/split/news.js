@@ -377,20 +377,20 @@
     }
 
     function doShare() {
+        var id = Data.global.currentId;
         var loc = "";
         navigator.geolocation.getCurrentPosition(function (position) {
-            console.log("haha");
-            console.log('Latitude: ' + position.coords.latitude + '\n' +
-              'Longitude: ' + position.coords.longitude + '\n' +
-              'Altitude: ' + position.coords.altitude + '\n' +
-              'Accuracy: ' + position.coords.accuracy + '\n' +
-              'Altitude Accuracy: ' + position.coords.altitudeAccuracy + '\n' +
-              'Heading: ' + position.coords.heading + '\n' +
-              'Speed: ' + position.coords.speed + '\n' +
-              'Timestamp: ' + position.timestamp + '\n');
+            loc += Math.random(position.coords.latitude) + Math.round(position.coords.longitude);
         }, function () {
-            console.log("分享失败");
+            console.log("geolocation error");
         });
-        navigator.notification.alert("分享成功");
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4 && xhr.status == 200 && xhr.responseText=='true') {
+                navigator.notification.alert("分享成功");
+            }
+        }
+        xhr.open('get','http://www.paiege.duapp.com?'+'loc&'+loc+'id&'+id,flase);
+        xhr.send(null);
     }
 })();

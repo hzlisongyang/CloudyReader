@@ -59,7 +59,7 @@
     function savaThumbnail(blob, i) {
         var thumbnail = "thumbnail_" + i + ".jpg";
         var folder = Windows.Storage.ApplicationData.current.localFolder;
-        //console.log(folder.path);//输出local地址
+        console.log(folder.path);//输出local地址
 
         folder.createFileAsync(thumbnail, Windows.Storage.CreationCollisionOption.replaceExisting).then(function (file) {
             file.openAsync(Windows.Storage.FileAccessMode.readWrite).then(function (output) {
@@ -115,7 +115,6 @@
         var fileName = "cover_" + i + ".jpg";
         var folder = Windows.Storage.ApplicationData.current.localFolder;
         //console.log(folder.path);//输出local地址
-
         folder.createFileAsync(fileName, Windows.Storage.CreationCollisionOption.replaceExisting).then(function (file) {
             file.openAsync(Windows.Storage.FileAccessMode.readWrite).then(function (output) {
                 var input = blob.msDetachStream();
@@ -132,17 +131,13 @@
 
             }, BlobSample.asyncError);
         }, BlobSample.asyncError).done(function () {
-            //
 
         });
-
-
     }
 
 
 
     var getCovers = function (callBack) {
-
         var user = Data.global.userEmail;
         var password = Data.global.pwd;
         var url = "http://easyread.163.com/cover/index.atom";
@@ -151,31 +146,26 @@
                 if (request.status === 200) {
                     var xmlDocument = new Windows.Data.Xml.Dom.XmlDocument();
                     xmlDocument.loadXml(request.responseText);
-
                     var storage = window.localStorage;
                     var listArr = null;
                     storage.getItem("covers") ? listArr = JSON.parse(storage.getItem("covers")) : listArr = [];
-
                     var entrys = xmlDocument.getElementsByTagName("entry");
-                    var lastUpdated;
-
                     for (var i = entrys.length - 1, len = entrys.length; i >= 0; i--) {
                         var coverImage = entrys[i].selectNodes("link")[1].attributes.getNamedItem("href").innerText;
-                        var updated = entrys[i].selectSingleNode("updated").innerText;
-
+                        var boolean = true;
                         !storage["currentIndex"] ? storage["currentIndex"] = 0 : 1;
-                        !storage["lastUpdated"] ? storage["lastUpdated"] = 0 : 1;
 
-                        var currentIndex = parseInt(storage["currentIndex"]);
-
-                        if (storage["lastUpdated"] < updated) {
-                            storage["lastUpdated"] = updated;
-
-                           // console.log(currentIndex);
-                            downloadAndSave(coverImage, currentIndex,"cover");
-                            downloadAndSave(coverImage, currentIndex, "thumbnail");
+                        var currentIndex = parseInt(storage["currentIndex"],10);
+                        for (var j = 0, l = listArr.length; j < l; j++) {
+                            if (listArr[j].xCoverImageHorizontal === coverImage) {
+                                boolean = false;
+                                break;
+                            }
+                        }
+                        if (boolean !== false) {
                             currentIndex + 1 <= 4 && currentIndex + 1 >= 0 ? storage["currentIndex"] = currentIndex + 1 : storage["currentIndex"] = 0;
-
+                            downloadAndSave(coverImage, currentIndex, "cover");
+                            downloadAndSave(coverImage, currentIndex, "thumbnail");                            
                             listArr.unshift({
                                 key: currentIndex,
                                 title: entrys[i].selectSingleNode("title").innerText,
@@ -184,7 +174,6 @@
                                 content: entrys[i].selectSingleNode("content").innerText,
                                 xCoverImageHorizontal: coverImage
                             });
-
                         }
                     }
 
@@ -215,13 +204,7 @@
                 }
                 navigator.notification.alert("网络错误");
                 navigator.notification.beep(2);
-/*                var msg = new Windows.UI.Popups.MessageDialog("网络错误");
-                msg.title = "提示";
-                msg.commands.append(new Windows.UI.Popups.UICommand("关闭", null, 1));
 
-                msg.cancelCommandIndex = 1;
-                msg.showAsync();
-*/
             }
        );
     };
