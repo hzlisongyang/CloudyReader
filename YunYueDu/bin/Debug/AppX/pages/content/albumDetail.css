@@ -1,0 +1,97 @@
+﻿.albumDetail .content {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    display: block;
+    height: 100%;
+    position: relative;
+    margin-left: 80px;
+    z-index: 0;
+    overflow:hidden;
+}
+.albumDetail li {
+    list-style:none;
+}
+    
+
+    .albumDetail .content .article {
+        /* 定义多列，以便在默认情况下水平滚动文章内容。*/
+        
+        column-gap: 5px;
+        column-width: 780px;
+        height: calc(100% - 83px);
+        padding-left:40px;
+        margin-top: 60px;
+        width: 780px;
+        color:black;
+        -ms-transform:-ms-transform 600ms linear;
+        -ms-transform: translate3d(0px, 0, 0);
+    }
+    .albumDetail .content p {
+        font-size:20px;
+        line-height:34px;
+        text-indent:2em;
+    }
+    .albumDetail .content div {
+        font-size:20px;
+        line-height:34px;
+    }
+.albumDetail img {
+    float:left;
+}
+
+ .albumDetail .fs-title {
+    font-size:28px !important;
+    line-height:44px;
+    height:80px;
+    width:780px;
+    text-overflow:ellipsis;
+    margin-bottom:20px;
+    position:absolute;
+    z-index:10;
+    color:#fff;
+    background:rgba(0, 0, 0, 0.4);
+}   
+ .albumDetail .fs-info {
+    display:none;
+}
+.column {
+    width:100%;
+    height:100%;
+}
+@media screen and (-ms-view-state: snapped) {
+    .albumDetail .content {
+        -ms-grid-row: 2;
+        -ms-grid-row-span: 1;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+        .albumDetail .content article {
+            /* 定义单列，以便在对齐模式下垂直滚动文章内容。*/
+            -ms-grid-columns: 300px 1fr;
+            -ms-grid-row: 2;
+            -ms-grid-rows: auto 60px;
+            display: -ms-grid;
+            height: 100%;
+            margin-left: 20px;
+            margin-top: 6px;
+            width: 300px;
+        }
+
+            .albumDetail .content article header .item-title {
+                margin-bottom: 10px;
+            }
+
+            .albumDetail .content article .item-image {
+                height: 140px;
+                width: 280px;
+            }
+
+
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+    .albumDetail .content article {
+        margin-left: 100px;
+    }
+}

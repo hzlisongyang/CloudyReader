@@ -23,13 +23,9 @@
 
     function enterHomeHandler() {
         document.querySelector(".enterHome").winControl.checked = true;
- 
         clearInterval(window.interval);
         var picHost = document.getElementById("picHost");
-        
         picHost.style.zIndex = -10;
-
-
         WinJS.Navigation.navigate('/pages/items/items.html');
     }
 

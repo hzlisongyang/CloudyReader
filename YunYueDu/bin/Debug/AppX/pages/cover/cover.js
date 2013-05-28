@@ -23,13 +23,9 @@
 
     function enterHomeHandler() {
         document.querySelector(".enterHome").winControl.checked = true;
- 
         clearInterval(window.interval);
         var picHost = document.getElementById("picHost");
-        
         picHost.style.zIndex = -10;
-
-
         WinJS.Navigation.navigate('/pages/items/items.html');
     }
 
@@ -68,43 +64,6 @@
                     })
                 }
             },5000)
-
-/*
-            WinJS.Promise.timeout(interval).done(
-                    function (complete) {
-                        index + 1 >= 4 ? index = 0 : index = index + 1;
-                        coverContent.style.opacity = 0;
-                        title.innerText = Data.covers[index].title;
-                        content.innerText = Data.covers[index].content;
-                        picHost.style.backgroundImage = "url('" + "ms-appdata:///local/cover_" + Data.covers[index].key + ".jpg" + "')";
-//                        picHost.style.backgroundPosition = "0% 0%"
-                        picHost.style.backgroundSize = "cover";
-
-                    
-                        WinJS.UI.Animation.fadeIn(picHost).then(function () {
-                            WinJS.UI.Animation.enterContent(coverContent, null);
-                        }).done(function () {
-
-                            Init.State.timer && WinJS.Promise.timeout(5000).done(function () {
-                                return timer(100);
-                            });
-                            ///*
-                            var i = Math.random(20) + 100, heiht = 0;
-                            
-                                var flag = -1;
-                                window.tii = setInterval(function () {
-                                    i < 101 ? flag = 1 : 1;
-                                    i > 120 ? flag = -1 : 1;
-                                    picHost.style.backgroundSize = i + "% auto";
-                                    picHost.style.backgroundPosition = "0% "+heiht+"%";
-                                    i = i + flag * 0.1;
-                                    heiht = heiht +  0.5;
-                                }, 1000/36);
-    
-
-                        });
-                    });
-*/
         })();
 
     }

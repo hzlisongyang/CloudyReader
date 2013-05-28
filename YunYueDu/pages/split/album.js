@@ -131,7 +131,7 @@ var groupInfo = WinJS.Utilities.markSupportedForProcessing(function groupInfo() 
                             xmlDocument.loadXml(result.responseText);
                             var text = xmlDocument.getElementsByTagName("content")[0].innerText;
                             Data.htmlcontent = text;
-                            WinJS.Navigation.navigate("/pages/content/content.html");
+                            WinJS.Navigation.navigate("/pages/content/albumDetail.html");
                         }
                     },
                     function onError() {

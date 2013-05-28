@@ -49,6 +49,9 @@ pages\addSub\addSub.css
 pages\addSub\addSub.html
 pages\addSub\addSub.js
 pages\addSub\worker.js
+pages\content\albumDetail.css
+pages\content\albumDetail.html
+pages\content\albumDetail.js
 pages\content\content.css
 pages\content\content.html
 pages\content\content.js

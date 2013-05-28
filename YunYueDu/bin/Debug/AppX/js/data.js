@@ -24,8 +24,8 @@
         { title: "外文资讯", uri: "http://easyread.163.com/common/node.atom?uuid=1cb0bfaf-a083-4bdf-b955-dddb5433cbb2&n=default", icon: "/images/icon/waiwen.png" },
         { title: "社交空间", uri: "http://easyread.163.com/common/node.atom?uuid=1fff875a-8e45-4ee6-9f38-d2f702507d20&n=default", icon: "/images/icon/shejiaokongjian.png" },
         { title: "本地资讯", uri: "http://easyread.163.com/common/node.atom?uuid=9817e493-a606-48c9-8482-d741845217b5&n=default", icon: "/images/icon/bendizixun.png" },
-        { title: "网易公开课", uri: "http://easyread.163.com/common/node.atom?uuid=09d03a45-3ed2-4bd5-9b02-939fc74acb12&n=default", icon: "/images/icon/gongkaike.png" },
-        { title: "网易招聘", uri: "http://easyread.163.com/common/node.atom?uuid=07a76f28-8473-4502-a041-e57913eae514&n=default", icon: "/images/icon/wangyizhaoping.png" },
+        { title: "公开课", uri: "http://easyread.163.com/common/node.atom?uuid=09d03a45-3ed2-4bd5-9b02-939fc74acb12&n=default", icon: "/images/icon/gongkaike.png" },
+        { title: "招聘", uri: "http://easyread.163.com/common/node.atom?uuid=07a76f28-8473-4502-a041-e57913eae514&n=default", icon: "/images/icon/wangyizhaoping.png" },
         { title: "高校", uri: "http://easyread.163.com/common/node.atom?uuid=f203f1d8-3938-4a95-8913-c1ce9e70753e&n=default", icon: "/images/icon/gaoxiao.png" },
 
     ];
@@ -33,6 +33,7 @@
     var subList = new WinJS.Binding.List(subArray);
 
     WinJS.Namespace.define("Data", {
+        user:null,
         items: null,
         split: null,
         htmlcontent: null,

@@ -52,13 +52,21 @@
             document.getElementById("close").addEventListener("click", doClose, false);
             document.getElementById("login").addEventListener("click", login, false);
             document.getElementById("cmdGet").addEventListener("click", getShare, false);
-            
-                var listView = element.querySelector(".itemslist").winControl;
-                listView.itemDataSource = Data.items.dataSource;
-                listView.itemTemplate = ItemsTemplate;// element.querySelector(".itemtemplate");
-                listView.oniteminvoked = this._itemInvoked.bind(this);
+
+            var listView = element.querySelector(".itemslist").winControl;
+            if (Data.items == null) {
+                var storage = window.localStorage;
+                var listArr = JSON.parse(storage.getItem("subList"));
+                var myData = new WinJS.Binding.List(listArr);
+                Data.items = myData;
+            }
+            listView.itemDataSource = Data.items.dataSource;
+            listView.itemTemplate = ItemsTemplate;// element.querySelector(".itemtemplate");
+            listView.oniteminvoked = this._itemInvoked.bind(this);
                 //listView.forceLayout();
-                this._initializeLayout(listView, Windows.UI.ViewManagement.ApplicationView.value);
+            this._initializeLayout(listView, Windows.UI.ViewManagement.ApplicationView.value);
+
+
             
         },
 
@@ -254,16 +262,26 @@
         //SubCentre.getSublist();
     }
     function doLogin() {
-        var appBar = document.querySelector("#createAppBar").winControl;
-        appBar.hide();
+        if (Data.user) {
+            navigator.notification.confirm("当前用户" + Data.user + "已登陆 是否继续登陆", function (o) {
+                if (o === 1) {
+                    var appBar = document.querySelector("#createAppBar").winControl;
+                    appBar.hide();
+                    document.getElementById("loginForm").style.display = "block";
+                }
+            });
 
-        document.getElementById("loginForm").style.display = "block";
+        } else {
+            var appBar = document.querySelector("#createAppBar").winControl;
+            appBar.hide();
+            document.getElementById("loginForm").style.display = "block";
+        }
+        
+
         //SubCentre.getSublist();
     }
     function doClose() {
         document.getElementById("loginForm").style.display = "none";
-
-        //SubCentre.getSublist();
     }
     function login() {
         var account = document.getElementById("account").value;
@@ -271,37 +289,64 @@
         var xhr = new XMLHttpRequest();
         xhr.onreadystatechange = function () {
             if(xhr.readyState ==4 && xhr.status == 200){
-                console.log(xhr.responseText);
                 var value = xhr.responseText;
                 var subId = window.localStorage["subId"];
                 if (value!="no") {
                     WinJS.UI.processAll().then(function () {
                         document.getElementById("loginForm").style.display = "none";
                         console.log(window.localStorage["subId"].length);
+                    }).then(function () {
+                        Data.user = account;
+                        window.localStorage.setItem("userAccount", account);
+                        navigator.notification.alert("登录成功" + Data.user);
+                        console.log(xhr.responseText);
+                        if (xhr.responseText.length > 0) {
+                            window.localStorage["subId"] = xhr.responseText;
+                            Init.itemsUpdate();
+                            doClickAdd();
+                        }
+                        //console.log(window.localStorage["subId"]);
                     }).done(function () {
-                        navigator.notification.alert("登录成功");
+                        
                     });
+                    
                 } else {
-                   
                     navigator.notification.alert("账号或密码错误");
                 }
             }
         }
         var url = "http://paiege.duapp.com/mlogin.php?account=" + account + "&password=" + password;
-        navigator.no
+        console.log(url);
         xhr.open("GET",url,false);
         xhr.send(null);
-        getCeolocation();
     }
 
     function getShare() {
+        var user = Data.user;
         var loc = "";
         navigator.geolocation.getCurrentPosition(function (position) {
-            loc = position.coords.latitude + position.coords.longitude;
+            loc += (position.coords.latitude).toFixed(2)*100 + '' + (position.coords.longitude).toFixed(2)*100;
+            if (user !== null) {
+                var xhr = new XMLHttpRequest();
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4 && xhr.status == 200) {
+                        var rssId = xhr.responseText;
+                        console.log(rssId);
+                        window.localStorage["subId"] += '+' + rssId;
+                        Init.itemsUpdate();
+                        doClickAdd();
+                        navigator.notification.alert("更新了记录");
+                    }
+                }
+                var url = 'http://paiege.duapp.com/share.php?' + 'loc=' + loc  + '&type=get&date=' + Date.now();
+                xhr.open('get', url, false);
+                xhr.send(null);
+                console.log(url);
+            } else {
+                navigator.notification.alert("请先登录");
+            }
         }, function () {
-            console.log("haha");
+            console.log("geolocation error");
         });
-       // var a =navigator.notification.confirm("哈哈哈哈");
-        navigator.notification.alert("成功更新"+2+"条记录");
     }
 })();

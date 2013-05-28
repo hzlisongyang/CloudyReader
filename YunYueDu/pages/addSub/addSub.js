@@ -21,6 +21,7 @@
            var uri = Data.AddSub.subList.getAt(0).uri;
            SubCentre.getDetails(uri, itemInvokedHandler);
            document.addEventListener("backbutton", function () {
+
                if (document.querySelector("#sub_button").textContent == "取消订阅") {
 
                    idArr.splice(arrIndex, 1);
@@ -87,8 +88,11 @@
     });
 
     function itemInvokedHandler(){
-        var detailList = document.querySelector(".detaillist").winControl;
-
+        try{
+            var detailList = document.querySelector(".detaillist").winControl;
+        } catch (e) {
+            return !1;
+        }
         detailList.itemDataSource = AddSub_Detail.items.dataSource;
         detailList.itemTemplate = document.querySelector(".detailtemplate");
         detailList.layout = new ui.ListLayout();
@@ -128,7 +132,15 @@
 
             document.querySelector("#sub_button").onclick = function () {
                 if (document.querySelector("#sub_button").textContent == "取消订阅") {
-
+                        if (Data.user !== null) {
+                            var account = Data.user;
+                            var xhr = new XMLHttpRequest();
+                            var subId = idArr[arrIndex];
+                            var url = "http://paiege.duapp.com/save.php?rss=" + subId + "&account=" + account + "&type=cancel" + "&date=" + Date.now();
+                            xhr.open("get", url, false);
+                            xhr.send(null);
+                            console.log(url);
+                        }
                         idArr.splice(arrIndex, 1);
                         window.localStorage["subId"] = idArr.join("+");
                         document.querySelector("#sub_button").textContent = "添加订阅"
@@ -136,11 +148,18 @@
 
                         Init.itemsUpdate();
                         
-                        arrIndex = idArr.length - 1;
-                        
+                        arrIndex = idArr.length - 1;     
                         
                 } else {
-                    
+                    if (Data.user !== null) {
+                        var account = Data.user;
+                        var xhr = new XMLHttpRequest();
+                        var subId = id;
+                        var url = "http://paiege.duapp.com/save.php?rss=" + subId + "&account=" + account + "&type=add" + "&date=" + Date.now();
+                        xhr.open("get", url, false);
+                        xhr.send(null);
+                        console.log(url);
+                    }
                     window.localStorage["subId"] += "+" + id;
                     idArr = String(window.localStorage["subId"]).split("+");
                     arrIndex = idArr.length - 1;

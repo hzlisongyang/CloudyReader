@@ -33,6 +33,10 @@
             if (app.sessionState.history) {
                 nav.history = app.sessionState.history;
             }
+            var userAccount = window.localStorage.getItem("userAccount");
+            if(userAccount){
+                Data.user = userAccount;
+            }
             var capture = navigator.device.capture;
 
             var networkState = navigator.connection.type;
@@ -54,7 +58,6 @@
             } else {
                 navigator.notification.alert("网络错误");
             }
-
         }
     });
 
@@ -63,7 +66,11 @@
         //需要持续挂起的任何状态。如果您需要
         //在应用程序挂起之前完成异步操作
         //，请调用 args.setPromise()。
+        args.setPromise(WinJS.UI.processAll().then(function () {
+
+        }))
         app.sessionState.history = nav.history;
+
     };
 
     app.start();

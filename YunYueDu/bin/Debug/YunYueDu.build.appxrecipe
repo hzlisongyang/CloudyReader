@@ -40,6 +40,9 @@
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\pages\content\font.css">
       <PackagePath>pages\content\font.css</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\pages\content\albumDetail.css">
+      <PackagePath>pages\content\albumDetail.css</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\pages\content\itemDetail.css">
       <PackagePath>pages\content\itemDetail.css</PackagePath>
     </AppxPackagedFile>
@@ -201,6 +204,9 @@
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\pages\content\flipView.js">
       <PackagePath>pages\content\flipView.js</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\pages\content\albumDetail.js">
+      <PackagePath>pages\content\albumDetail.js</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\pages\content\itemDetail.js">
       <PackagePath>pages\content\itemDetail.js</PackagePath>
     </AppxPackagedFile>
@@ -224,6 +230,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\pages\content\flipView.html">
       <PackagePath>pages\content\flipView.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\pages\content\albumDetail.html">
+      <PackagePath>pages\content\albumDetail.html</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Li\Desktop\CloudyReader\YunYueDu\pages\content\itemDetail.html">
       <PackagePath>pages\content\itemDetail.html</PackagePath>

@@ -35,7 +35,9 @@
         font-size:20px;
         line-height:34px;
     }
-
+.itemdetailpage .content ul {
+    margin:0;
+}
 .itemdetailpage .fs-quote {
     font-size:23px !important;
     line-height:36px;

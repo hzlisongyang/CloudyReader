@@ -468,45 +468,46 @@
         idArr.asyncEach(function (url, index, resume) {
             var serviceAddressFiled = "http://easyread.163.com/addsub.atom?id=" + url;
             var resourceUri = new Windows.Foundation.Uri(serviceAddressFiled);
-            //console.log(serviceAddressFiled);
+            console.log(serviceAddressFiled);
+            
             client.retrieveFeedAsync(resourceUri).then(function (feed) {
                 var backgroundImage, readType = "news", id, title, updated, subtitle;
                 var currentFeed = feed;
+                try{
+                    title = currentFeed.items[0].title.text;
+                    id = currentFeed.items[0].id
+                    updated = currentFeed.items[0].lastUpdatedTime;
+                    subtitle = currentFeed.items[0].content.text;
 
-                title = currentFeed.items[0].title.text;
-                id = currentFeed.items[0].id
-                updated = currentFeed.items[0].lastUpdatedTime;
-                subtitle = currentFeed.items[0].content.text;
 
+                    var links = currentFeed.items[0].links;
+                    for (var j = 0 ; j < links.length; j++) {
 
-                var links = currentFeed.items[0].links;
-                for (var j = 0 ; j < links.length; j++) {
-
-                    if (links[j].relationship == "x-stanza-cover-image") {
-                        backgroundImage = links[j].uri.absoluteCanonicalUri;
+                        if (links[j].relationship == "x-stanza-cover-image") {
+                            backgroundImage = links[j].uri.absoluteCanonicalUri;
+                        }
                     }
-                }
 
-                for (var j = 0 ; j < currentFeed.items[0].elementExtensions.length; j++) {
-                    var nodeName = currentFeed.items[0].elementExtensions[j].nodeName;
-                    var node = currentFeed.items[0].elementExtensions[j];
+                    for (var j = 0 ; j < currentFeed.items[0].elementExtensions.length; j++) {
+                        var nodeName = currentFeed.items[0].elementExtensions[j].nodeName;
+                        var node = currentFeed.items[0].elementExtensions[j];
 
-                    if (nodeName == "entry_status") {
-                        readType = node.attributeExtensions[0].value;
+                        if (nodeName == "entry_status") {
+                            readType = node.attributeExtensions[0].value;
+                        }
                     }
+
+                    listArr.push({
+                        title: title,
+                        id: id,
+                        updated: updated,
+                        subtitle: subtitle,
+                        backgroundImage: backgroundImage,
+                        readType: readType
+                    });
+                }catch(e){
+
                 }
-
-                //console.log("Init ", title, "----", readType);
-
-                listArr.push({
-                    title: title,
-                    id: id,
-                    updated: updated,
-                    subtitle: subtitle,
-                    backgroundImage: backgroundImage,
-                    readType: readType
-                });
-
 
             }).done(function () {
                 if (index == idArr.length - 1) {

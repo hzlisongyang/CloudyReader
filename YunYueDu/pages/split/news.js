@@ -378,19 +378,27 @@
 
     function doShare() {
         var id = Data.global.currentId;
+        var user = Data.user;
         var loc = "";
-        navigator.geolocation.getCurrentPosition(function (position) {
-            loc += Math.random(position.coords.latitude) + Math.round(position.coords.longitude);
+        navigator.geolocation.getCurrentPosition(function (position) {            
+            loc += (position.coords.latitude).toFixed(2)*100+ '' + (position.coords.longitude).toFixed(2)*100;
+            if (user !== null) {
+                var xhr = new XMLHttpRequest();
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4 && xhr.status == 200 && xhr.responseText == 'share') {
+                        navigator.notification.alert("分享成功");
+                    }
+                }
+                var url = 'http://paiege.duapp.com/share.php?' + 'loc=' + loc + '&rss=' + id + '&account=' + user + '&type=share&date=' + Date.now();
+                xhr.open('get', url, false);
+                xhr.send(null);
+                console.log(url);
+            } else {
+                navigator.notification.alert("请先登录");
+            }
         }, function () {
             console.log("geolocation error");
         });
-        var xhr = new XMLHttpRequest();
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState == 4 && xhr.status == 200 && xhr.responseText=='true') {
-                navigator.notification.alert("分享成功");
-            }
-        }
-        xhr.open('get','http://www.paiege.duapp.com?'+'loc&'+loc+'id&'+id,flase);
-        xhr.send(null);
+
     }
 })();

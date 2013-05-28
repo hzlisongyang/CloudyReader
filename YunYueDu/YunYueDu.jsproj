@@ -110,6 +110,9 @@
     <Content Include="pages\content\flipView.html" />
     <Content Include="pages\content\flipView.js" />
     <Content Include="pages\content\font.css" />
+    <Content Include="pages\content\albumDetail.css" />
+    <Content Include="pages\content\albumDetail.html" />
+    <Content Include="pages\content\albumDetail.js" />
     <Content Include="pages\content\itemDetail.css" />
     <Content Include="pages\content\itemDetail.html" />
     <Content Include="pages\content\itemDetail.js" />
